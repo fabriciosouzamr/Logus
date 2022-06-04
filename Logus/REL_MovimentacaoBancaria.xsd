@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="REL_MovimentacaoBancaria" targetNamespace="http://tempuri.org/REL_MovimentacaoBancaria.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/REL_MovimentacaoBancaria.xsd" xmlns:mstns="http://tempuri.org/REL_MovimentacaoBancaria.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="POR_OPERACAO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SQ_MOV_BANCARIO" type="xs:integer" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="CD_BANCO" type="xs:integer" />
+        <xs:element name="NU_CHEQUE" type="xs:string" />
+        <xs:element name="NO_FAVORECIDO" type="xs:string" />
+        <xs:element name="VL_PAGO" type="xs:double" />
+        <xs:element name="VL_BRUTO" type="xs:double" />
+        <xs:element name="CD_OPERACAO_BANCARIA" type="xs:integer" />
+        <xs:element name="NO_OPERACAO" type="xs:string" />
+        <xs:element name="VL_SUB_ALIQ_1" type="xs:double" />
+        <xs:element name="NO_SUB_ALIQ_1" type="xs:string" />
+        <xs:element name="VL_SUB_ALIQ_2" type="xs:double" />
+        <xs:element name="NO_SUB_ALIQ_2" type="xs:string" />
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PROVISAO_IMPOSTO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_PROVISAO" type="xs:string" />
+        <xs:element name="CD_PROVISAO" type="xs:integer" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NO_FAVORECIDO" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="VL_PAGO" type="xs:double" />
+        <xs:element name="VL_PROVISAO" type="xs:double" />
+        <xs:element name="CONTA_CONTABIL" type="xs:string" />
+        <xs:element name="NO_OPERACAO" type="xs:string" />
+        <xs:element name="IC_CALC_SUBALIQ" type="xs:string" />
+        <xs:element name="VL_SUB_ALIQ_1" type="xs:double" />
+        <xs:element name="VL_SUB_ALIQ_2" type="xs:double" />
+        <xs:element name="TX_BASE" type="xs:string" />
+        <xs:element name="CD_ADDRESS_NUMBER" type="xs:string" />
+        <xs:element name="NU_PIS_PASEP" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EXTRATO_BANCARIO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NU_CHEQUE" type="xs:string" />
+        <xs:element name="NO_OPERACAO" type="xs:string" />
+        <xs:element name="DS_DESCRICAO" type="xs:string" />
+        <xs:element name="VL_PAGO" type="xs:double" />
+        <xs:element name="IC_DEBITO_CREDITO" type="xs:string" />
+        <xs:element name="SQ_MOV_BANCARIO" type="xs:integer" />
+        <xs:element name="CD_BANCO" type="xs:integer" />
+        <xs:element name="NO_BANCO" type="xs:string" />
+        <xs:element name="CD_FILIAL_PAGADORA" type="xs:string" />
+        <xs:element name="SQ_ITEM_MOV_BANCARIO" type="xs:integer" />
+        <xs:element name="VL_PROVISAO" type="xs:double" />
+        <xs:element name="NO_PROVISAO" type="xs:string" />
+        <xs:element name="VL_CHEQUE" type="xs:double" />
+        <xs:element name="VL_ITEM_CHEQUE" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

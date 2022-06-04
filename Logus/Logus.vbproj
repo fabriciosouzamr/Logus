@@ -1,0 +1,4157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DECD65F9-1C46-4098-949A-8F778210C7BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Logus</RootNamespace>
+    <AssemblyName>Logus</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ManifestCertificateThumbprint>063A34C562DAF3D000738221B3E865BDC34A8AE3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Logus_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\PROGS\Logus\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\brilhe9100w\C%24\progs\logus\install\</InstallUrl>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Logus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Logus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.GrFingerXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Componentes .NET\AxInterop.GrFingerXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CargillCAISServ, Version=0.0.0.0, Culture=neutral, PublicKeyToken=aed0cbd69a1ff63b">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Componentes .NET\CargillCAISServ.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.GrFingerXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Componentes .NET\Interop.GrFingerXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Excel.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics3.Excel.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics3.Win.UltraWinGrid.ExcelExport.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.SupportDialogs.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Shared.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinTree.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.AppStylistSupport.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.AppStylistSupport.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.Misc.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinCalcManager.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinChart.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinDataSource.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinDock.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinEditors.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinExplorerBar.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinGrid.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListView.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinListView.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinMaskedEdit.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinMaskedEdit.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinPrintPreviewDialog.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinSchedule.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSpellChecker.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinSpellChecker.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinStatusBar.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinTabbedMdi.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinTabControl.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2010.2\windows forms\bin\Infragistics2.Win.UltraWinToolbars.v10.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cripto.vb" />
+    <Compile Include="Editor.designer.vb">
+      <DependentUpon>Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAbreDia.Designer.vb">
+      <DependentUpon>frmAbreDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbreDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcertoRD_Movimentacao.Designer.vb">
+      <DependentUpon>frmAcertoRD_Movimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcertoRD_Movimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcertoRD_Valor.Designer.vb">
+      <DependentUpon>frmAcertoRD_Valor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcertoRD_Valor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcesso_Cadastra_Digital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcesso_Senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcesso_Senha_Finger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmarracaoICMS.Designer.vb">
+      <DependentUpon>frmAmarracaoICMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmarracaoICMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacaoAutomatica.Designer.vb">
+      <DependentUpon>frmAplicacaoAutomatica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacaoAutomatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacaoContratoFixo_AlterarAplicacao.Designer.vb">
+      <DependentUpon>frmAplicacaoContratoFixo_AlterarAplicacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacaoContratoFixo_AlterarAplicacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacaoMovimentacao.Designer.vb">
+      <DependentUpon>frmAplicacaoMovimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacaoMovimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacaoPagamento.Designer.vb">
+      <DependentUpon>frmAplicacaoPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacaoPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAprovacaoCreditoConsulta.Designer.vb">
+      <DependentUpon>frmAprovacaoCreditoConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAprovacaoCreditoConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAprovacaoEstornoDesagio.Designer.vb">
+      <DependentUpon>frmAprovacaoEstornoDesagio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAprovacaoEstornoDesagio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAprovacaoPagamento.Designer.vb">
+      <DependentUpon>frmAprovacaoPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAprovacaoPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacao_AplicaPagEstorno.Designer.vb">
+      <DependentUpon>frmAplicacao_AplicaPagEstorno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacao_AplicaPagEstorno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacao_QuebrarValor.Designer.vb">
+      <DependentUpon>frmAplicacao_QuebrarValor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacao_QuebrarValor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvi.Designer.vb">
+      <DependentUpon>frmAvi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAjuste_RDE.Designer.vb">
+      <DependentUpon>frmCadastroAjuste_RDE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroAjuste_RDE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroAnaliseConfiguracao.Designer.vb">
+      <DependentUpon>frmCadastroAnaliseConfiguracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroAnaliseConfiguracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroArmazem.Designer.vb">
+      <DependentUpon>frmCadastroArmazem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroArmazem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroArmazem_Pilha.Designer.vb">
+      <DependentUpon>frmCadastroArmazem_Pilha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroArmazem_Pilha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroBonusPadrao.Designer.vb">
+      <DependentUpon>frmCadastroBonusPadrao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroBonusPadrao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo_Alteracao.Designer.vb">
+      <DependentUpon>frmCadastroContratoFixo_Alteracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo_Alteracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroDadosBolsa.Designer.vb">
+      <DependentUpon>frmCadastroDadosBolsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroDadosBolsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroCessaoDireito.Designer.vb">
+      <DependentUpon>frmCadastroCessaoDireito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroCessaoDireito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroConciliacao.Designer.vb">
+      <DependentUpon>frmCadastroConciliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroConciliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContato.Designer.vb">
+      <DependentUpon>frmCadastroContato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo.Designer.vb">
+      <DependentUpon>frmCadastroContratoFixo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo_Adendo.Designer.vb">
+      <DependentUpon>frmCadastroContratoFixo_Adendo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo_Adendo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo_FixarDolar.Designer.vb">
+      <DependentUpon>frmCadastroContratoFixo_FixarDolar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoFixo_FixarDolar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoPAF.Designer.vb">
+      <DependentUpon>frmCadastroContratoPAF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoPAF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoPAF_Alteracao.Designer.vb">
+      <DependentUpon>frmCadastroContratoPAF_Alteracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoPAF_Alteracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoPAF_AlteracaoJuros.Designer.vb">
+      <DependentUpon>frmCadastroContratoPAF_AlteracaoJuros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoPAF_AlteracaoJuros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroContratoResumo.Designer.vb">
+      <DependentUpon>frmCadastroContratoResumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroContratoResumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroEstoqueSilo.Designer.vb">
+      <DependentUpon>frmCadastroEstoqueSilo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroEstoqueSilo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroFilial.Designer.vb">
+      <DependentUpon>frmCadastroFilial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroFilial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroFornecedor.Designer.vb">
+      <DependentUpon>frmCadastroFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroFrete.Designer.vb">
+      <DependentUpon>frmCadastroFrete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroFrete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroFretista.Designer.vb">
+      <DependentUpon>frmCadastroFretista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroFretista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroGarantia.Designer.vb">
+      <DependentUpon>frmCadastroGarantia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroGarantia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroGrupoAcesso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroGrupoTipoMovimentacao.Designer.vb">
+      <DependentUpon>frmCadastroGrupoTipoMovimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroGrupoTipoMovimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroInovacao.Designer.vb">
+      <DependentUpon>frmCadastroInovacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroInovacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroItensBranch.Designer.vb">
+      <DependentUpon>frmCadastroItensBranch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroItensBranch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroJornal.Designer.vb">
+      <DependentUpon>frmCadastroJornal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroJornal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroListagemGeral.Designer.vb">
+      <DependentUpon>frmCadastroListagemGeral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroListagemGeral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroModalidadeConciliacao.Designer.vb">
+      <DependentUpon>frmCadastroModalidadeConciliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroModalidadeConciliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroMovimentacao.Designer.vb">
+      <DependentUpon>frmCadastroMovimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroMovimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroMovimentacaoBancaria.Designer.vb">
+      <DependentUpon>frmCadastroMovimentacaoBancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroMovimentacaoBancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroNegociacao.Designer.vb">
+      <DependentUpon>frmCadastroNegociacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroNegociacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroNegociacao_Alteracao.Designer.vb">
+      <DependentUpon>frmCadastroNegociacao_Alteracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroNegociacao_Alteracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroNegociacao_AlteracaoJuros.Designer.vb">
+      <DependentUpon>frmCadastroNegociacao_AlteracaoJuros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroNegociacao_AlteracaoJuros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroNotaRemessa.Designer.vb">
+      <DependentUpon>frmCadastroNotaRemessa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroNotaRemessa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroOperacaoBancaria.Designer.vb">
+      <DependentUpon>frmCadastroOperacaoBancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroOperacaoBancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroOperBancariaTpMovimentacao.Designer.vb">
+      <DependentUpon>frmCadastroOperBancariaTpMovimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroOperBancariaTpMovimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroPagamento.Designer.vb">
+      <DependentUpon>frmCadastroPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroPDD.Designer.vb">
+      <DependentUpon>frmCadastroPDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroPDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroPDD_Pagamentos.Designer.vb">
+      <DependentUpon>frmCadastroPDD_Pagamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroPDD_Pagamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroPreNegociacao.Designer.vb">
+      <DependentUpon>frmCadastroPreNegociacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroPreNegociacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroRecuperacaoCredito.Designer.vb">
+      <DependentUpon>frmCadastroRecuperacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroRecuperacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroRecuperacaoParcela.Designer.vb">
+      <DependentUpon>frmCadastroRecuperacaoParcela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroRecuperacaoParcela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroRecuperacaoParcelaRecebimento.Designer.vb">
+      <DependentUpon>frmCadastroRecuperacaoParcelaRecebimento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroRecuperacaoParcelaRecebimento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroReNegociacao_Aprovacao.Designer.vb">
+      <DependentUpon>frmCadastroReNegociacao_Aprovacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroReNegociacao_Aprovacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroReNegociacao_Solicitacao.Designer.vb">
+      <DependentUpon>frmCadastroReNegociacao_Solicitacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroReNegociacao_Solicitacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroSolicitacaoCredito.Designer.vb">
+      <DependentUpon>frmCadastroSolicitacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroSolicitacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroSolicitacaoCredito_Cancelamento.Designer.vb">
+      <DependentUpon>frmCadastroSolicitacaoCredito_Cancelamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroSolicitacaoCredito_Cancelamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroTipoFretistaTributacao.Designer.vb">
+      <DependentUpon>frmCadastroTipoFretistaTributacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroTipoFretistaTributacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroTipoMovimentacao.Designer.vb">
+      <DependentUpon>frmCadastroTipoMovimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroTipoMovimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroTipoPagamento.Designer.vb">
+      <DependentUpon>frmCadastroTipoPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroTipoPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroTipoRD.Designer.vb">
+      <DependentUpon>frmCadastroTipoRD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroTipoRD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroUtilizacaoSistema.Designer.vb">
+      <DependentUpon>frmCadastroUtilizacaoSistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroUtilizacaoSistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelamento_SolicitarQuantidade.Designer.vb">
+      <DependentUpon>frmCancelamento_SolicitarQuantidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelamento_SolicitarQuantidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChart_Dados.designer.vb">
+      <DependentUpon>frmChart_Dados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChart_Dados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChart_Propriedade.Designer.vb">
+      <DependentUpon>frmChart_Propriedade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChart_Propriedade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChart_SelecionarChart.designer.vb">
+      <DependentUpon>frmChart_SelecionarChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChart_SelecionarChart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChart_Texto.Designer.vb">
+      <DependentUpon>frmChart_Texto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChart_Texto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConcordo.Designer.vb">
+      <DependentUpon>frmConcordo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConcordo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAjuste_RDE.Designer.vb">
+      <DependentUpon>frmConsultaAjuste_RDE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaAjuste_RDE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaArmazem.Designer.vb">
+      <DependentUpon>frmConsultaArmazem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaArmazem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaArmazemItem.Designer.vb">
+      <DependentUpon>frmConsultaArmazemItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaArmazemItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCessaoDireito.Designer.vb">
+      <DependentUpon>frmConsultaCessaoDireito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaCessaoDireito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaComprasAcumuladas.Designer.vb">
+      <DependentUpon>frmConsultaComprasAcumuladas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaComprasAcumuladas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaConciliacao.Designer.vb">
+      <DependentUpon>frmConsultaConciliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaConciliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaContato.Designer.vb">
+      <DependentUpon>frmConsultaContato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaContato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaContrato.Designer.vb">
+      <DependentUpon>frmConsultaContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDadosBolsa.Designer.vb">
+      <DependentUpon>frmConsultaDadosBolsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaDadosBolsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaEstoqueSilo.Designer.vb">
+      <DependentUpon>frmConsultaEstoqueSilo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaEstoqueSilo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaFornecedor.Designer.vb">
+      <DependentUpon>frmConsultaFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaFornecedorHistorico.Designer.vb">
+      <DependentUpon>frmConsultaFornecedorHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaFornecedorHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaFrete.Designer.vb">
+      <DependentUpon>frmConsultaFrete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaFrete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaFretePagamento.Designer.vb">
+      <DependentUpon>frmConsultaFretePagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaFretePagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaGarantia.Designer.vb">
+      <DependentUpon>frmConsultaGarantia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaGarantia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaGeral.Designer.vb">
+      <DependentUpon>frmConsultaGeral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaGeral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaHistoricoBolsa.Designer.vb">
+      <DependentUpon>frmConsultaHistoricoBolsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaHistoricoBolsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaInovacao.Designer.vb">
+      <DependentUpon>frmConsultaInovacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaInovacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaInterfacePagamento.Designer.vb">
+      <DependentUpon>frmConsultaInterfacePagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaInterfacePagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaJornal.Designer.vb">
+      <DependentUpon>frmConsultaJornal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaJornal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacaoBancaria.Designer.vb">
+      <DependentUpon>frmConsultaMovimentacaoBancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacaoBancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacaoCacau.Designer.vb">
+      <DependentUpon>frmConsultaMovimentacaoCacau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacaoCacau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacaoPorEstado.Designer.vb">
+      <DependentUpon>frmConsultaMovimentacaoPorEstado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacaoPorEstado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacao_Alteracao.Designer.vb">
+      <DependentUpon>frmConsultaMovimentacao_Alteracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMovimentacao_Alteracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaNotaRemessa.Designer.vb">
+      <DependentUpon>frmConsultaNotaRemessa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaNotaRemessa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPagamento.Designer.vb">
+      <DependentUpon>frmConsultaPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPagamento_Alteracao.Designer.vb">
+      <DependentUpon>frmConsultaPagamento_Alteracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPagamento_Alteracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPDD.Designer.vb">
+      <DependentUpon>frmConsultaPDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPDD_Pagamentos.Designer.vb">
+      <DependentUpon>frmConsultaPDD_Pagamentos.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmConsultaPDD_Pagamentos.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmConsultaPreNegociacao.Designer.vb">
+      <DependentUpon>frmConsultaPreNegociacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPreNegociacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaRD.Designer.vb">
+      <DependentUpon>frmConsultaRD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaRD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaRecuperacaoCredito.Designer.vb">
+      <DependentUpon>frmConsultaRecuperacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaRecuperacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaReNegociacao.Designer.vb">
+      <DependentUpon>frmConsultaReNegociacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaReNegociacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaRequisicaoSacaria.Designer.vb">
+      <DependentUpon>frmConsultaRequisicaoSacaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaRequisicaoSacaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSacaria.Designer.vb">
+      <DependentUpon>frmConsultaSacaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaSacaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSaldoSacaria.Designer.vb">
+      <DependentUpon>frmConsultaSaldoSacaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaSaldoSacaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSolicitacaoCredito.Designer.vb">
+      <DependentUpon>frmConsultaSolicitacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaSolicitacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSummus.Designer.vb">
+      <DependentUpon>frmConsultaSummus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaSummus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaTransferencia.Designer.vb">
+      <DependentUpon>frmConsultaTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleRecuperacaoCredito.Designer.vb">
+      <DependentUpon>frmControleRecuperacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmControleRecuperacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControle_AprovacaoPendente.Designer.vb">
+      <DependentUpon>frmControle_AprovacaoPendente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmControle_AprovacaoPendente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConusltaTransferenciaSacariaAberto.Designer.vb">
+      <DependentUpon>frmConusltaTransferenciaSacariaAberto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConusltaTransferenciaSacariaAberto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstornoDesagio.Designer.vb">
+      <DependentUpon>frmEstornoDesagio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstornoDesagio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFotografiaFornecedor.Designer.vb">
+      <DependentUpon>frmFotografiaFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFotografiaFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeraFretePagamento.Designer.vb">
+      <DependentUpon>frmGeraFretePagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeraFretePagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeraInterfaceJDE.Designer.vb">
+      <DependentUpon>frmGeraInterfaceJDE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeraInterfaceJDE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeraInterfaceLivroFiscal.Designer.vb">
+      <DependentUpon>frmGeraInterfaceLivroFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeraInterfaceLivroFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeraPremioQualidade.Designer.vb">
+      <DependentUpon>frmGeraPremioQualidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeraPremioQualidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGRF_Bolsa.Designer.vb">
+      <DependentUpon>frmGRF_Bolsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGRF_Bolsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGRF_Contato.Designer.vb">
+      <DependentUpon>frmGRF_Contato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGRF_Contato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridEscolheColuna.Designer.vb">
+      <DependentUpon>frmGridEscolheColuna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridEscolheColuna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoricoSolicitacaoCredito.Designer.vb">
+      <DependentUpon>frmHistoricoSolicitacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoricoSolicitacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimeCheque.Designer.vb">
+      <DependentUpon>frmImprimeCheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimeCheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.vb">
+      <DependentUpon>frmMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_AjusteEstoque.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_AjusteEstoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_AjusteEstoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_AjusteSacaria.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_AjusteSacaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_AjusteSacaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Devolucao.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_Devolucao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Devolucao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_MovimentarLote.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_MovimentarLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_MovimentarLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_NFReferencia.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_NFReferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_NFReferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_ObsAcerto.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_ObsAcerto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_ObsAcerto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObservacao.Designer.vb">
+      <DependentUpon>frmObservacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmObservacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Info.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Movimentar.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_Movimentar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Movimentar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Rastreabilidade.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_Rastreabilidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Rastreabilidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Pilha.Designer.vb">
+      <DependentUpon>frmMovimentacaoCacau_Pilha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoCacau_Pilha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametroBolsa.Designer.vb">
+      <DependentUpon>frmParametroBolsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametroBolsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametroGeral.Designer.vb">
+      <DependentUpon>frmParametroGeral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametroGeral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametroRecuperacaoCredito.Designer.vb">
+      <DependentUpon>frmParametroRecuperacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametroRecuperacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesq_ContratoPAF.Designer.vb">
+      <DependentUpon>frmPesq_ContratoPAF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesq_ContratoPAF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesq_Fornecedor.Designer.vb">
+      <DependentUpon>frmPesq_Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesq_Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesq_Listagem.Designer.vb">
+      <DependentUpon>frmPesq_Listagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesq_Listagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesq_Movimentacao.Designer.vb">
+      <DependentUpon>frmPesq_Movimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesq_Movimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesq_Municipio.Designer.vb">
+      <DependentUpon>frmPesq_Municipio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesq_Municipio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesq_OperacaoBancaria.Designer.vb">
+      <DependentUpon>frmPesq_OperacaoBancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesq_OperacaoBancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgressBar.Designer.vb">
+      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioGeracaoAutomatica.Designer.vb">
+      <DependentUpon>frmRelatorioGeracaoAutomatica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioGeracaoAutomatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioGeral.Designer.vb">
+      <DependentUpon>frmRelatorioGeral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioGeral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioGeral_FilialPeriodo.Designer.vb">
+      <DependentUpon>frmRelatorioGeral_FilialPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioGeral_FilialPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioGeral_FilialPeriodoFornecedor.Designer.vb">
+      <DependentUpon>frmRelatorioGeral_FilialPeriodoFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioGeral_FilialPeriodoFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_AdiantamentoExposure.Designer.vb">
+      <DependentUpon>frmREL_AdiantamentoExposure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_AdiantamentoExposure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Adiantamento_Em_Aberto.Designer.vb">
+      <DependentUpon>frmREL_Adiantamento_Em_Aberto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Adiantamento_Em_Aberto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Ajuste_RDE.Designer.vb">
+      <DependentUpon>frmREL_Ajuste_RDE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Ajuste_RDE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Aplicacoes.Designer.vb">
+      <DependentUpon>frmREL_Aplicacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Aplicacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Branches.Designer.vb">
+      <DependentUpon>frmREL_Branches.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Branches.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Cacau_Aordem.Designer.vb">
+      <DependentUpon>frmREL_Cacau_Aordem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Cacau_Aordem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Cacau_Aordem_Valorizacao.Designer.vb">
+      <DependentUpon>frmREL_Cacau_Aordem_Valorizacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Cacau_Aordem_Valorizacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ConferenciaContabil.Designer.vb">
+      <DependentUpon>frmREL_ConferenciaContabil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ConferenciaContabil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ContaCorrenteContratoFixo.Designer.vb">
+      <DependentUpon>frmREL_ContaCorrenteContratoFixo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ContaCorrenteContratoFixo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ContaCorrenteFornecedor.Designer.vb">
+      <DependentUpon>frmREL_ContaCorrenteFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ContaCorrenteFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ContratosComSaldo.Designer.vb">
+      <DependentUpon>frmREL_ContratosComSaldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ContratosComSaldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Contratos_Em_Aberto.Designer.vb">
+      <DependentUpon>frmREL_Contratos_Em_Aberto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Contratos_Em_Aberto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Contratos_Listagem.Designer.vb">
+      <DependentUpon>frmREL_Contratos_Listagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Contratos_Listagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Diferencial.Designer.vb">
+      <DependentUpon>frmREL_Diferencial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Diferencial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Fluxo_Caixa.Designer.vb">
+      <DependentUpon>frmREL_Fluxo_Caixa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Fluxo_Caixa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Fornecedor.Designer.vb">
+      <DependentUpon>frmREL_Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Funrural_ICMS.Designer.vb">
+      <DependentUpon>frmREL_Funrural_ICMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Funrural_ICMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Industrializacao.Designer.vb">
+      <DependentUpon>frmREL_Industrializacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Industrializacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_InformeCompras.Designer.vb">
+      <DependentUpon>frmREL_InformeCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_InformeCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ListagemFrete_Recepcao.Designer.vb">
+      <DependentUpon>frmREL_ListagemFrete_Recepcao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ListagemFrete_Recepcao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_MovBancaria_ExtratoBancario.Designer.vb">
+      <DependentUpon>frmREL_MovBancaria_ExtratoBancario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_MovBancaria_ExtratoBancario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_MovBancaria_PorOperacao.Designer.vb">
+      <DependentUpon>frmREL_MovBancaria_PorOperacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_MovBancaria_PorOperacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Movimentacao.Designer.vb">
+      <DependentUpon>frmREL_Movimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Movimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Movimentacao_DataCacau.Designer.vb">
+      <DependentUpon>frmREL_Movimentacao_DataCacau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Movimentacao_DataCacau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Movimentacao_Sacaria.Designer.vb">
+      <DependentUpon>frmREL_Movimentacao_Sacaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Movimentacao_Sacaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_NegociacoesAbertoComFixacoes.Designer.vb">
+      <DependentUpon>frmREL_NegociacoesAbertoComFixacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_NegociacoesAbertoComFixacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Net_Saldo.Designer.vb">
+      <DependentUpon>frmREL_Net_Saldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Net_Saldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_NotaRemessa.Designer.vb">
+      <DependentUpon>frmREL_NotaRemessa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_NotaRemessa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Pagamento.Designer.vb">
+      <DependentUpon>frmREL_Pagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Pagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_PagamentoAberto.Designer.vb">
+      <DependentUpon>frmREL_PagamentoAberto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_PagamentoAberto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_PDD.designer.vb">
+      <DependentUpon>frmREL_PDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_PDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_PISCofins.Designer.vb">
+      <DependentUpon>frmREL_PISCofins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_PISCofins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_PosEstoqueCacau_SaldoFinanceiro.Designer.vb">
+      <DependentUpon>frmREL_PosEstoqueCacau_SaldoFinanceiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_PosEstoqueCacau_SaldoFinanceiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Posicao_Contrato.Designer.vb">
+      <DependentUpon>frmREL_Posicao_Contrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Posicao_Contrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Posicao_Fornecedor.Designer.vb">
+      <DependentUpon>frmREL_Posicao_Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Posicao_Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_PrecoMedioNFComplementa.Designer.vb">
+      <DependentUpon>frmREL_PrecoMedioNFComplementa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_PrecoMedioNFComplementa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Preco_Medio.Designer.vb">
+      <DependentUpon>frmREL_Preco_Medio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Preco_Medio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ProvisaoBonus.Designer.vb">
+      <DependentUpon>frmREL_ProvisaoBonus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ProvisaoBonus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ProvisaoNFComplementar.Designer.vb">
+      <DependentUpon>frmREL_ProvisaoNFComplementar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ProvisaoNFComplementar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_RD.Designer.vb">
+      <DependentUpon>frmREL_RD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_RD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_RecuperacaoCredito.Designer.vb">
+      <DependentUpon>frmREL_RecuperacaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_RecuperacaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_ResumoOperacoes.Designer.vb">
+      <DependentUpon>frmREL_ResumoOperacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_ResumoOperacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Resumo_Estoque.Designer.vb">
+      <DependentUpon>frmREL_Resumo_Estoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Resumo_Estoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Saldo_Fornecedor.Designer.vb">
+      <DependentUpon>frmREL_Saldo_Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Saldo_Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_SEC_AreaAcesso..Designer.vb">
+      <DependentUpon>frmREL_SEC_AreaAcesso..vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_SEC_AreaAcesso..vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_SEC_GrupoAcesso_Acesso.Designer.vb">
+      <DependentUpon>frmREL_SEC_GrupoAcesso_Acesso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_SEC_GrupoAcesso_Acesso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_SEC_Grupo_Usuario.Designer.vb">
+      <DependentUpon>frmREL_SEC_Grupo_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_SEC_Grupo_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_SEC_Usuario.aspx.Designer.vb">
+      <DependentUpon>frmREL_SEC_Usuario.aspx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_SEC_Usuario.aspx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_SEC_Usuario_Acesso.Designer.vb">
+      <DependentUpon>frmREL_SEC_Usuario_Acesso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_SEC_Usuario_Acesso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_Transferencia.Designer.vb">
+      <DependentUpon>frmREL_Transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_Transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREL_UmidadeMedia.Designer.vb">
+      <DependentUpon>frmREL_UmidadeMedia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREL_UmidadeMedia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequisicaoSacaria.Designer.vb">
+      <DependentUpon>frmRequisicaoSacaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRequisicaoSacaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSacaria_InclusaoFilial.Designer.vb">
+      <DependentUpon>frmSacaria_InclusaoFilial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSacaria_InclusaoFilial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSacaria_InclusaoFornecedor.Designer.vb">
+      <DependentUpon>frmSacaria_InclusaoFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSacaria_InclusaoFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelecao_MultiplaSelecao.Designer.vb">
+      <DependentUpon>frmSelecao_MultiplaSelecao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelecao_MultiplaSelecao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatusFilial.Designer.vb">
+      <DependentUpon>frmStatusFilial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatusFilial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelaInicial.Designer.vb">
+      <DependentUpon>frmTelaInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTelaInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserDialogo_Texto.designer.vb">
+      <DependentUpon>frmUserDialogo_Texto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserDialogo_Texto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOD_Biometria.vb" />
+    <Compile Include="MOD_Chart.vb" />
+    <Compile Include="MOD_Chart_Local.vb" />
+    <Compile Include="MOD_ComboBox.vb" />
+    <Compile Include="MOD_ConfiguracaoRegional.vb" />
+    <Compile Include="MOD_Contrato.vb" />
+    <Compile Include="MOD_DB.vb" />
+    <Compile Include="MOD_Declaracao.vb" />
+    <Compile Include="MOD_Declaracao_Local.vb" />
+    <Compile Include="MOD_DS.vb" />
+    <Compile Include="MOD_EMail.vb" />
+    <Compile Include="MOD_EXportar_Relatorio.vb" />
+    <Compile Include="MOD_Form.vb" />
+    <Compile Include="MOD_Form_Local.vb" />
+    <Compile Include="MOD_Funcao.vb">
+    </Compile>
+    <Compile Include="MOD_Funcao_Local.vb" />
+    <Compile Include="MOD_Global.vb" />
+    <Compile Include="MOD_Grid.vb" />
+    <Compile Include="MOD_Grid_Local.vb" />
+    <Compile Include="MOD_Impressao.vb" />
+    <Compile Include="MOD_Impressao_Matricial.vb" />
+    <Compile Include="MOD_InscricaoEstadual.vb" />
+    <Compile Include="MOD_Objeto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MOD_Registro.vb" />
+    <Compile Include="MOD_Relatorio_Local.vb" />
+    <Compile Include="MOD_Sec.vb" />
+    <Compile Include="MOD_Senha.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pesq_CodigoNome.Designer.vb">
+      <DependentUpon>Pesq_CodigoNome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pesq_CodigoNome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RPT_Acerto_RD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Acerto_RD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT_Adiantamento_Em_Aberto.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Adiantamento_Em_Aberto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Adiantamento_Exposure.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Adiantamento_Exposure.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Adiantamento_Exposure_Analitico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Adiantamento_Exposure_Analitico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Amarracao_ICMS.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Amarracao_ICMS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Aplicacao_Pagamento.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Aplicacao_Pagamento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Aplicacao_Recebimento.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Aplicacao_Recebimento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Aplic_Contrato_Fixo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Aplic_Contrato_Fixo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_AprovacaoAcertoEstoque.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_AprovacaoAcertoEstoque.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_AprovacaoAcertoRD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_AprovacaoAcertoRD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Apuracao_Quebra_Sobra.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Apuracao_Quebra_Sobra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Bonus_Previsao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Bonus_Previsao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Branche.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Branche.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cacau_A_Ordem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cacau_A_Ordem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cacau_A_Ordem_Revalorizacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cacau_A_Ordem_Revalorizacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cacau_A_Ordem_Sintetico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cacau_A_Ordem_Sintetico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cacau_A_Ordem_Variacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cacau_A_Ordem_Variacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cash_Trade_Analitico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cash_Trade_Analitico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cash_Trade_Analitico_Mensal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cash_Trade_Analitico_Mensal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cash_Trade_Sintetico.vb">
+      <DependentUpon>RPT_Cash_Trade_Sintetico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Cessao_Direito.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Cessao_Direito.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Conciliacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Conciliacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Conferencia_Contabil.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Conferencia_Contabil.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Conta_Corrente_Contrato_Fixo.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Conta_Corrente_Contrato_Fixo.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Conta_Corrente_Fornecedor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Conta_Corrente_Fornecedor.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoAFixar.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoAFixar.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoCarta.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoCarta.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoFilial.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoFilial.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoFixo_ComAdiatamento.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoFixo_ComAdiatamento.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoFixo_SemAdiatamento.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoFixo_SemAdiatamento.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_2010.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_2010.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_ComAdiatamento.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_ComAdiatamento.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_ConfCompra_CacauAOrdem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_ConfCompra_CacauAOrdem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_DolarFlutuante.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_DolarFlutuante.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_Master.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_SemAdiatamento.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_SemAdiatamento.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPAF_SemAdiatamento_2011.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPAF_SemAdiatamento_2011.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ContratoPrecoAFixar.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ContratoPrecoAFixar.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contratos_Aberto_Resumo.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contratos_Aberto_Resumo.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contratos_Fixo.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contratos_Fixo.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contratos_PAF.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contratos_PAF.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contrato_Com_Saldo.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contrato_Com_Saldo.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contrato_Fixo_Aberto.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contrato_Fixo_Aberto.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contrato_Fixo_Cancelado.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contrato_Fixo_Cancelado.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contrato_Outros.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contrato_Outros.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Contrato_PAF_Aberto.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Contrato_PAF_Aberto.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_CTR_Aditivo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_CTR_Aditivo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_DeclaracaoFixacaoPreco.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_DeclaracaoFixacaoPreco.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_DeclaracaoFixacaoPreco_DiferencialBolsa.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_DeclaracaoFixacaoPreco_DiferencialBolsa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_DeclaracaoFixacaoPreco_DolarFlutuante.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_DeclaracaoFixacaoPreco_DolarFlutuante.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Diferencial.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Diferencial.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Diferencial_Preco_Base.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Diferencial_Preco_Base.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Estoque_Armazem.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Estoque_Armazem.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Estoque_Cacau.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Estoque_Cacau.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_FichaCadastral_PF.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_FichaCadastral_PF.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_FichaCadastral_PJ.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_FichaCadastral_PJ.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Fluxo_Caixa.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Fluxo_Caixa.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Fornecedor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Fornecedor.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Frete_Divergencia.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Frete_Divergencia.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Funrural_ICMS.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Funrural_ICMS.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Industrializacao_Valorizacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Industrializacao_Valorizacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Informe_Compras.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Informe_Compras.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Interface_Livro_Fiscal.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Interface_Livro_Fiscal.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ListagemFrete_Recepcao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ListagemFrete_Recepcao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Movb_Extrato.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Movb_Extrato.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Movb_Ope.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Movb_Ope.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_MovEsotqueCacau_DataCacau_Analitico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_MovEsotqueCacau_DataCacau_Analitico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_MovEsotqueCacau_DataCacau_Sintetico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_MovEsotqueCacau_DataCacau_Sintetico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Movimentacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Movimentacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_MovimentacaoAbertaNegociacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_MovimentacaoAbertaNegociacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Movimentacao_Municipio.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Movimentacao_Municipio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Movimentacao_Sacaria_Filial.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Movimentacao_Sacaria_Filial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Movimentacao_Sacaria_Fornecedor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Movimentacao_Sacaria_Fornecedor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Negociacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Negociacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Negociacao_Aberta_Com_Fixacao.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Negociacao_Aberta_Com_Fixacao.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Negociacao_Aberto.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Negociacao_Aberto.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Negociacao_Aditamento.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Negociacao_Aditamento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Negociacao_Bolsa.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Negociacao_Bolsa.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Negociacao_US.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Negociacao_US.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Net_Saldo_Filial.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Net_Saldo_Filial.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Net_Saldo_Fornecedor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Net_Saldo_Fornecedor.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Net_Saldo_Sintetico.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Net_Saldo_Sintetico.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Net_Saldo_Titular.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Net_Saldo_Titular.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_NF_Comprementar_Contabil.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_NF_Comprementar_Contabil.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_NotaRemessa.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_NotaRemessa.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Nota_Fiscal_Complementar.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Nota_Fiscal_Complementar.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Pagamento.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Pagamento.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Pagamento_Aberto.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Pagamento_Aberto.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_PDD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_PDD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_PISCofins.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_PISCofins.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT_PosEstoqueCacau_SaldoFinanceiro.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_PosEstoqueCacau_SaldoFinanceiro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Posicao_Contrato.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Posicao_Contrato.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Posicao_Fornecedor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Posicao_Fornecedor.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Preco_Medio.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Preco_Medio.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Preco_Medio_Analitico.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Preco_Medio_Analitico.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Preco_Medio_Sintetico.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Preco_Medio_Sintetico.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Prov.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Prov.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_ProvisaoNFComplementar.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_ProvisaoNFComplementar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_RD_Geral.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_RD_Geral.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_RecCredito_Analitico.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_RecCredito_Analitico.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_RecCredito_Sintetico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_RecCredito_Sintetico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Resumo_Estoque.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Resumo_Estoque.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Resumo_Operacoes.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Resumo_Operacoes.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Sacaria_ComprovaEntregaRecebimento.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Sacaria_ComprovaEntregaRecebimento.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SaldoFinanceiro_CtrFixo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SaldoFinanceiro_CtrFixo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SaldoFornecedor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SaldoFornecedor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT_Saldo_Fornecedor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Saldo_Fornecedor.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT_Saldo_FornecedorUS.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Saldo_FornecedorUS.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Saldo_Sacaria_Filial.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Saldo_Sacaria_Filial.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Saldo_Sacaria_Fornecedor.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Saldo_Sacaria_Fornecedor.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SEC_AreaAcesso.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SEC_AreaAcesso.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SEC_GrupoAcesso_Acesso.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SEC_GrupoAcesso_Acesso.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SEC_Grupo_Usuario.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SEC_Grupo_Usuario.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SEC_Usuario.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SEC_Usuario.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_SEC_Usuario_Acesso.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_SEC_Usuario_Acesso.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Transferencia_Data.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Transferencia_Data.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Transferencia_Peso.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Transferencia_Peso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_UmidadeMedia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_UmidadeMedia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Utilizacao_Sistema.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Utilizacao_Sistema.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RPT_Voucher.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Voucher.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Selecao.Designer.vb">
+      <DependentUpon>Selecao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selecao.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrAVI.designer.vb">
+      <DependentUpon>usrAVI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usrAVI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Web References\DBControlX\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbreDia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbreDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcertoRD_Movimentacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAcertoRD_Movimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcertoRD_Valor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAcertoRD_Valor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcesso_Cadastra_Digital.resx">
+      <DependentUpon>frmAcesso_Cadastra_Digital.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcesso_Senha.resx">
+      <DependentUpon>frmAcesso_Senha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcesso_Senha_Finger.resx">
+      <DependentUpon>frmAcesso_Senha_Finger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmarracaoICMS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAmarracaoICMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacaoAutomatica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAplicacaoAutomatica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacaoContratoFixo_AlterarAplicacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAplicacaoContratoFixo_AlterarAplicacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacaoMovimentacao.resx">
+      <DependentUpon>frmAplicacaoMovimentacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacaoPagamento.resx">
+      <DependentUpon>frmAplicacaoPagamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprovacaoCreditoConsulta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAprovacaoCreditoConsulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprovacaoEstornoDesagio.resx">
+      <DependentUpon>frmAprovacaoEstornoDesagio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprovacaoPagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAprovacaoPagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacao_AplicaPagEstorno.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAplicacao_AplicaPagEstorno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacao_QuebrarValor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAplicacao_QuebrarValor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvi.resx">
+      <DependentUpon>frmAvi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroAjuste_RDE.resx">
+      <DependentUpon>frmCadastroAjuste_RDE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroAnaliseConfiguracao.resx">
+      <DependentUpon>frmCadastroAnaliseConfiguracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroArmazem.resx">
+      <DependentUpon>frmCadastroArmazem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroArmazem_Pilha.resx">
+      <DependentUpon>frmCadastroArmazem_Pilha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroBonusPadrao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroBonusPadrao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroCessaoDireito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroCessaoDireito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroConciliacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroConciliacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoFixo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContratoFixo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoFixo_Adendo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContratoFixo_Adendo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoFixo_Alteracao.resx">
+      <DependentUpon>frmCadastroContratoFixo_Alteracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoFixo_FixarDolar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContratoFixo_FixarDolar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoPAF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContratoPAF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoPAF_Alteracao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContratoPAF_Alteracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoPAF_AlteracaoJuros.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroContratoPAF_AlteracaoJuros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroContratoResumo.resx">
+      <DependentUpon>frmCadastroContratoResumo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroDadosBolsa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroDadosBolsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroEstoqueSilo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroEstoqueSilo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroFilial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroFilial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroFornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroFrete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroFrete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroFretista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroFretista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroGarantia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroGarantia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroGrupoAcesso.resx">
+      <DependentUpon>frmCadastroGrupoAcesso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroGrupoTipoMovimentacao.resx">
+      <DependentUpon>frmCadastroGrupoTipoMovimentacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroInovacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroInovacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroItensBranch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroItensBranch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroJornal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroJornal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroListagemGeral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroListagemGeral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroModalidadeConciliacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroModalidadeConciliacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroMovimentacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroMovimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroMovimentacaoBancaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroMovimentacaoBancaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroNegociacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroNegociacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroNegociacao_Alteracao.resx">
+      <DependentUpon>frmCadastroNegociacao_Alteracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroNegociacao_AlteracaoJuros.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroNegociacao_AlteracaoJuros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroNotaRemessa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroNotaRemessa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroOperacaoBancaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroOperacaoBancaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroOperBancariaTpMovimentacao.resx">
+      <DependentUpon>frmCadastroOperBancariaTpMovimentacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroPagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroPagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroPDD.resx">
+      <DependentUpon>frmCadastroPDD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroPDD_Pagamentos.resx">
+      <DependentUpon>frmCadastroPDD_Pagamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroPreNegociacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroPreNegociacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroRecuperacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroRecuperacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroRecuperacaoParcela.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroRecuperacaoParcela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroRecuperacaoParcelaRecebimento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroRecuperacaoParcelaRecebimento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroReNegociacao_Aprovacao.resx">
+      <DependentUpon>frmCadastroReNegociacao_Aprovacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroReNegociacao_Solicitacao.resx">
+      <DependentUpon>frmCadastroReNegociacao_Solicitacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroSolicitacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroSolicitacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroSolicitacaoCredito_Cancelamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroSolicitacaoCredito_Cancelamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroTipoFretistaTributacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroTipoFretistaTributacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroTipoMovimentacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroTipoMovimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroTipoPagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroTipoPagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroTipoRD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroTipoRD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroUsuario.resx">
+      <DependentUpon>frmCadastroUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroUtilizacaoSistema.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCadastroUtilizacaoSistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelamento_SolicitarQuantidade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCancelamento_SolicitarQuantidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChart_Dados.resx">
+      <DependentUpon>frmChart_Dados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChart_Propriedade.resx">
+      <DependentUpon>frmChart_Propriedade.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChart_SelecionarChart.resx">
+      <DependentUpon>frmChart_SelecionarChart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChart_Texto.resx">
+      <DependentUpon>frmChart_Texto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConcordo.resx">
+      <DependentUpon>frmConcordo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAjuste_RDE.resx">
+      <DependentUpon>frmConsultaAjuste_RDE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaArmazem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaArmazem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaArmazemItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaArmazemItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCessaoDireito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaCessaoDireito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaComprasAcumuladas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaComprasAcumuladas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaConciliacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaConciliacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaContato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaContato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaContrato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDadosBolsa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaDadosBolsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaEstoqueSilo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaEstoqueSilo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaFornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaFornecedorHistorico.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaFornecedorHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaFrete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaFrete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaFretePagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaFretePagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaGarantia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaGarantia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaGeral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaGeral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaHistoricoBolsa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaHistoricoBolsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaInovacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaInovacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaInterfacePagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaInterfacePagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaJornal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaJornal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMovimentacaoBancaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaMovimentacaoBancaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMovimentacaoCacau.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaMovimentacaoCacau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMovimentacaoPorEstado.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaMovimentacaoPorEstado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMovimentacao_Alteracao.resx">
+      <DependentUpon>frmConsultaMovimentacao_Alteracao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaNotaRemessa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaNotaRemessa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaPagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPagamento_Alteracao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaPagamento_Alteracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPDD.resx">
+      <DependentUpon>frmConsultaPDD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPDD_Pagamentos.resx">
+      <DependentUpon>frmConsultaPDD_Pagamentos.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPreNegociacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaPreNegociacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaRD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaRD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaRecuperacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaRecuperacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaReNegociacao.resx">
+      <DependentUpon>frmConsultaReNegociacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaRequisicaoSacaria.resx">
+      <DependentUpon>frmConsultaRequisicaoSacaria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaSacaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaSacaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaSaldoSacaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaSaldoSacaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaSolicitacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaSolicitacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaSummus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaSummus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaTransferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControleRecuperacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmControleRecuperacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControle_AprovacaoPendente.resx">
+      <DependentUpon>frmControle_AprovacaoPendente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConusltaTransferenciaSacariaAberto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConusltaTransferenciaSacariaAberto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstornoDesagio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEstornoDesagio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFotografiaFornecedor.resx">
+      <DependentUpon>frmFotografiaFornecedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeraFretePagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGeraFretePagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeraInterfaceJDE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGeraInterfaceJDE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeraInterfaceLivroFiscal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGeraInterfaceLivroFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeraPremioQualidade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGeraPremioQualidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGRF_Bolsa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGRF_Bolsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGRF_Contato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGRF_Contato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridEscolheColuna.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGridEscolheColuna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoricoSolicitacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHistoricoSolicitacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimeCheque.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImprimeCheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_AjusteEstoque.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_AjusteEstoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_AjusteSacaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_AjusteSacaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_Devolucao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_Devolucao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_MovimentarLote.resx">
+      <DependentUpon>frmMovimentacaoCacau_MovimentarLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_NFReferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_NFReferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_ObsAcerto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_ObsAcerto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObservacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmObservacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_Info.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_Movimentar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_Movimentar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_Rastreabilidade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_Rastreabilidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoCacau_Pilha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovimentacaoCacau_Pilha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametroBolsa.resx">
+      <DependentUpon>frmParametroBolsa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametroGeral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmParametroGeral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametroRecuperacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmParametroRecuperacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesq_ContratoPAF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesq_ContratoPAF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesq_Fornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesq_Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesq_Listagem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesq_Listagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesq_Movimentacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesq_Movimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesq_Municipio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesq_Municipio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesq_OperacaoBancaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesq_OperacaoBancaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioGeracaoAutomatica.resx">
+      <DependentUpon>frmRelatorioGeracaoAutomatica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioGeral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRelatorioGeral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioGeral_FilialPeriodo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRelatorioGeral_FilialPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioGeral_FilialPeriodoFornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRelatorioGeral_FilialPeriodoFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_AdiantamentoExposure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_AdiantamentoExposure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Adiantamento_Em_Aberto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Adiantamento_Em_Aberto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Ajuste_RDE.resx">
+      <DependentUpon>frmREL_Ajuste_RDE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Aplicacoes.resx">
+      <DependentUpon>frmREL_Aplicacoes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Branches.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Branches.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Cacau_Aordem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Cacau_Aordem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Cacau_Aordem_Valorizacao.resx">
+      <DependentUpon>frmREL_Cacau_Aordem_Valorizacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ConferenciaContabil.resx">
+      <DependentUpon>frmREL_ConferenciaContabil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ContaCorrenteContratoFixo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_ContaCorrenteContratoFixo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ContaCorrenteFornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_ContaCorrenteFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ContratosComSaldo.resx">
+      <DependentUpon>frmREL_ContratosComSaldo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Contratos_Em_Aberto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Contratos_Em_Aberto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Contratos_Listagem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Contratos_Listagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Diferencial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Diferencial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Fluxo_Caixa.resx">
+      <DependentUpon>frmREL_Fluxo_Caixa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Fornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Funrural_ICMS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Funrural_ICMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Industrializacao.resx">
+      <DependentUpon>frmREL_Industrializacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_InformeCompras.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_InformeCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ListagemFrete_Recepcao.resx">
+      <DependentUpon>frmREL_ListagemFrete_Recepcao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_MovBancaria_ExtratoBancario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_MovBancaria_ExtratoBancario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_MovBancaria_PorOperacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_MovBancaria_PorOperacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Movimentacao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Movimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Movimentacao_DataCacau.resx">
+      <DependentUpon>frmREL_Movimentacao_DataCacau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Movimentacao_Sacaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Movimentacao_Sacaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_NegociacoesAbertoComFixacoes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_NegociacoesAbertoComFixacoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Net_Saldo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Net_Saldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_NotaRemessa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_NotaRemessa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Pagamento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Pagamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_PagamentoAberto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_PagamentoAberto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_PDD.resx">
+      <DependentUpon>frmREL_PDD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_PISCofins.resx">
+      <DependentUpon>frmREL_PISCofins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_PosEstoqueCacau_SaldoFinanceiro.resx">
+      <DependentUpon>frmREL_PosEstoqueCacau_SaldoFinanceiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Posicao_Contrato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Posicao_Contrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Posicao_Fornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Posicao_Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_PrecoMedioNFComplementa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_PrecoMedioNFComplementa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Preco_Medio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Preco_Medio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ProvisaoBonus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_ProvisaoBonus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ProvisaoNFComplementar.resx">
+      <DependentUpon>frmREL_ProvisaoNFComplementar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_RD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_RD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_RecuperacaoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_RecuperacaoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_ResumoOperacoes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_ResumoOperacoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Resumo_Estoque.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Resumo_Estoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Saldo_Fornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Saldo_Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_SEC_AreaAcesso..resx">
+      <DependentUpon>frmREL_SEC_AreaAcesso..vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_SEC_GrupoAcesso_Acesso.resx">
+      <DependentUpon>frmREL_SEC_GrupoAcesso_Acesso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_SEC_Grupo_Usuario.resx">
+      <DependentUpon>frmREL_SEC_Grupo_Usuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_SEC_Usuario.aspx.resx">
+      <DependentUpon>frmREL_SEC_Usuario.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_SEC_Usuario_Acesso.resx">
+      <DependentUpon>frmREL_SEC_Usuario_Acesso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_Transferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmREL_Transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREL_UmidadeMedia.resx">
+      <DependentUpon>frmREL_UmidadeMedia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequisicaoSacaria.resx">
+      <DependentUpon>frmRequisicaoSacaria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSacaria_InclusaoFilial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSacaria_InclusaoFilial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSacaria_InclusaoFornecedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSacaria_InclusaoFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelecao_MultiplaSelecao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelecao_MultiplaSelecao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatusFilial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStatusFilial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTelaInicial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTelaInicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserDialogo_Texto.resx">
+      <DependentUpon>frmUserDialogo_Texto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesq_CodigoNome.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pesq_CodigoNome.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="RPT_Adiantamento_Em_Aberto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Adiantamento_Em_Aberto.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Adiantamento_Exposure.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Adiantamento_Exposure.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Amarracao_ICMS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Amarracao_ICMS.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Aplicacao_Pagamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Aplicacao_Pagamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Aplicacao_Recebimento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Aplicacao_Recebimento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Aplic_Contrato_Fixo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Aplic_Contrato_Fixo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Apuracao_Quebra_Sobra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Apuracao_Quebra_Sobra.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Bonus_Previsao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Bonus_Previsao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Branche.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Branche.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Cacau_A_Ordem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cacau_A_Ordem.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Cacau_A_Ordem_Sintetico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cacau_A_Ordem_Sintetico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Cessao_Direito.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cessao_Direito.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Conciliacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Conciliacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Conferencia_Contabil.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Conferencia_Contabil.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Conta_Corrente_Contrato_Fixo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Conta_Corrente_Contrato_Fixo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Conta_Corrente_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Conta_Corrente_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoAFixar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoAFixar.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoCarta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoCarta.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoFilial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoFilial.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoFixo_ComAdiatamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoFixo_ComAdiatamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoFixo_SemAdiatamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoFixo_SemAdiatamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoPAF_ComAdiatamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_ComAdiatamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoPAF_SemAdiatamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_SemAdiatamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_ContratoPrecoAFixar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPrecoAFixar.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contratos_Aberto_Resumo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contratos_Aberto_Resumo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contratos_Fixo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contratos_Fixo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contratos_PAF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contratos_PAF.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contrato_Com_Saldo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contrato_Com_Saldo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contrato_Fixo_Aberto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contrato_Fixo_Aberto.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contrato_Fixo_Cancelado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contrato_Fixo_Cancelado.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contrato_Outros.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contrato_Outros.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Contrato_PAF_Aberto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Contrato_PAF_Aberto.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_DeclaracaoFixacaoPreco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_DeclaracaoFixacaoPreco.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Diferencial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Diferencial.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Diferencial_Preco_Base.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Diferencial_Preco_Base.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Estoque_Armazem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Estoque_Armazem.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Estoque_Cacau.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Estoque_Cacau.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_FichaCadastral_PF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_FichaCadastral_PF.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_FichaCadastral_PJ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_FichaCadastral_PJ.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Fluxo_Caixa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Fluxo_Caixa.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Frete_Divergencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Frete_Divergencia.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Funrural_ICMS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Funrural_ICMS.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Informe_Compras.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Informe_Compras.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Interface_Livro_Fiscal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Interface_Livro_Fiscal.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Movb_Extrato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Movb_Extrato.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Movb_Ope.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Movb_Ope.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Movimentacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Movimentacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_MovimentacaoAbertaNegociacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_MovimentacaoAbertaNegociacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Movimentacao_Municipio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Movimentacao_Municipio.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Movimentacao_Sacaria_Filial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Movimentacao_Sacaria_Filial.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Movimentacao_Sacaria_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Movimentacao_Sacaria_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Negociacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Negociacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Negociacao_Aberta_Com_Fixacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Negociacao_Aberta_Com_Fixacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Negociacao_Aberto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Negociacao_Aberto.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Negociacao_Bolsa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Negociacao_Bolsa.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Negociacao_US.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Negociacao_US.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Net_Saldo_Filial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Net_Saldo_Filial.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Net_Saldo_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Net_Saldo_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Net_Saldo_Sintetico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Net_Saldo_Sintetico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Net_Saldo_Titular.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Net_Saldo_Titular.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_NF_Comprementar_Contabil.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_NF_Comprementar_Contabil.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_NotaRemessa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_NotaRemessa.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Nota_Fiscal_Complementar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Nota_Fiscal_Complementar.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Pagamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Pagamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Pagamento_Aberto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Pagamento_Aberto.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Posicao_Contrato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Posicao_Contrato.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Posicao_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Posicao_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Preco_Medio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Preco_Medio.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Preco_Medio_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Preco_Medio_Analitico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Preco_Medio_Sintetico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Preco_Medio_Sintetico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Prov.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Prov.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_RD_Geral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_RD_Geral.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_RecCredito_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_RecCredito_Analitico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Resumo_Estoque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Resumo_Estoque.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Resumo_Operacoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Resumo_Operacoes.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Sacaria_ComprovaEntregaRecebimento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Sacaria_ComprovaEntregaRecebimento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Saldo_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Saldo_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Saldo_FornecedorUS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Saldo_FornecedorUS.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Saldo_Sacaria_Filial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Saldo_Sacaria_Filial.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Saldo_Sacaria_Fornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Saldo_Sacaria_Fornecedor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_SEC_AreaAcesso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SEC_AreaAcesso.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_SEC_GrupoAcesso_Acesso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SEC_GrupoAcesso_Acesso.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_SEC_Grupo_Usuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SEC_Grupo_Usuario.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_SEC_Usuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SEC_Usuario.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_SEC_Usuario_Acesso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SEC_Usuario_Acesso.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Transferencia_Data.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Transferencia_Data.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Utilizacao_Sistema.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Utilizacao_Sistema.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_Voucher.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Voucher.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RPT_MovEsotqueCacau_DataCacau_Sintetico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_MovEsotqueCacau_DataCacau_Sintetico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="RPT_Acerto_RD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Acerto_RD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Adiantamento_Exposure_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Adiantamento_Exposure_Analitico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_AprovacaoAcertoEstoque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_AprovacaoAcertoEstoque.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_AprovacaoAcertoRD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_AprovacaoAcertoRD.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Cacau_A_Ordem_Revalorizacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cacau_A_Ordem_Revalorizacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Cacau_A_Ordem_Variacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cacau_A_Ordem_Variacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Cash_Trade_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cash_Trade_Analitico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Cash_Trade_Analitico_Mensal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cash_Trade_Analitico_Mensal.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Cash_Trade_Sintetico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Cash_Trade_Sintetico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ContratoPAF_2010.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_2010.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ContratoPAF_ConfCompra_CacauAOrdem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_ConfCompra_CacauAOrdem.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ContratoPAF_DolarFlutuante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_DolarFlutuante.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ContratoPAF_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_Master.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ContratoPAF_SemAdiatamento_2011.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ContratoPAF_SemAdiatamento_2011.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_CTR_Aditivo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_CTR_Aditivo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_DeclaracaoFixacaoPreco_DiferencialBolsa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_DeclaracaoFixacaoPreco_DiferencialBolsa.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_DeclaracaoFixacaoPreco_DolarFlutuante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_DeclaracaoFixacaoPreco_DolarFlutuante.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Industrializacao_Valorizacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Industrializacao_Valorizacao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ListagemFrete_Recepcao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ListagemFrete_Recepcao.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_MovEsotqueCacau_DataCacau_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_MovEsotqueCacau_DataCacau_Analitico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Negociacao_Aditamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Negociacao_Aditamento.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_PDD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_PDD.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_PISCofins.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_PISCofins.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_PosEstoqueCacau_SaldoFinanceiro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_PosEstoqueCacau_SaldoFinanceiro.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_ProvisaoNFComplementar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_ProvisaoNFComplementar.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_RecCredito_Sintetico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_RecCredito_Sintetico.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_SaldoFinanceiro_CtrFixo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SaldoFinanceiro_CtrFixo.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_SaldoFornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_SaldoFornecedor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Transferencia_Peso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Transferencia_Peso.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_UmidadeMedia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_UmidadeMedia.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selecao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Selecao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrAVI.resx">
+      <DependentUpon>usrAVI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://brilhe008m/DBControlX/DBControlX.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DBControlX\</RelPath>
+      <UpdateFromURL>http://brilhe008m/DBControlX/DBControlX.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Logus_DBControlX_DBControlX</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\DBControlX\DBControlX.disco" />
+    <None Include="Web References\DBControlX\DBControlX.wsdl" />
+    <None Include="Web References\DBControlX\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excluir.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Vertical.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loan Check .ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loan Information .ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loan Search .ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loan.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Novo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExportarExcel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fechar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gravar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alterar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash Wizard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quebra.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fichacadastral.ttx" />
+    <None Include="fichacadastral_PJ.ttx" />
+    <None Include="Logus_TemporaryKey.pfx" />
+    <None Include="REL_Fornecedor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REL_Fornecedor.xsx">
+      <DependentUpon>REL_Fornecedor.xsd</DependentUpon>
+    </None>
+    <None Include="REL_MovimentacaoBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REL_MovimentacaoBancaria.xsx">
+      <DependentUpon>REL_MovimentacaoBancaria.xsd</DependentUpon>
+    </None>
+    <None Include="REL_Outros.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REL_Outros.xsx">
+      <DependentUpon>REL_Outros.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Cash Deposit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Pilha.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\replace2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\Informações.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\99.ico" />
+    <None Include="Imagem\99.png" />
+    <Content Include="Imagem\Arquivar.gif" />
+    <None Include="Imagem\Bulb Idea.ico" />
+    <None Include="Imagem\Bank 2 Add.ico" />
+    <None Include="Imagem\BOLSA.ico" />
+    <Content Include="Imagem\Cancelar.ico" />
+    <Content Include="Imagem\Cancelar.jpg" />
+    <None Include="Imagem\Chat 2.ico" />
+    <Content Include="Imagem\Contrato.gif" />
+    <None Include="Imagem\Credit Card.ico" />
+    <None Include="Imagem\Copiar.ico" />
+    <Content Include="Imagem\Desarquivar.gif" />
+    <Content Include="Imagem\Descancelar.ico" />
+    <None Include="Imagem\Descancelar.jpg" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Imagem\FichaCadastral.ico" />
+    <None Include="Imagem\ListaNegra.ico" />
+    <None Include="REL_Contratos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REL_Contratos.xsx">
+      <DependentUpon>REL_Contratos.xsd</DependentUpon>
+    </None>
+    <None Include="REL_Transferencia.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REL_Transferencia.xsx">
+      <DependentUpon>REL_Transferencia.xsd</DependentUpon>
+    </None>
+    <None Include="Imagem\Employment.ico" />
+    <None Include="Imagem\DeselecionarTodos.ico" />
+    <None Include="Imagem\DesmarcarTodos.ico" />
+    <None Include="Imagem\Devolver.ico" />
+    <None Include="Imagem\Entregar.ico" />
+    <Content Include="Imagem\EnviarEMail.jpg" />
+    <None Include="Imagem\Gold Bars.ico" />
+    <Content Include="Imagem\Industrializacao.ico" />
+    <Content Include="Imagem\ItemSelecionado.gif" />
+    <Content Include="Imagem\Jornal.gif" />
+    <Content Include="Imagem\Juros.gif" />
+    <Content Include="Imagem\logoCargill.jpg" />
+    <Content Include="Imagem\MarcarTodos.ico" />
+    <Content Include="Imagem\Movimentacao.ico" />
+    <Content Include="Imagem\MovimentacaoInicial.ico" />
+    <Content Include="Imagem\Negociacao.jpg" />
+    <Content Include="Imagem\ok.ico" />
+    <Content Include="Imagem\Ok.jpg" />
+    <Content Include="Imagem\Pagamentos.ico" />
+    <Content Include="Imagem\Pagamentos_Alterar.ico" />
+    <Content Include="Imagem\Pagamentos_Aprovacao.ico" />
+    <Content Include="Imagem\Pasta.ico" />
+    <None Include="Imagem\PDD.ico" />
+    <Content Include="Imagem\Propriedade.ico" />
+    <Content Include="Imagem\Provisao.ico" />
+    <None Include="Imagem\Sacaria.ico" />
+    <None Include="Imagem\RD.ICO" />
+    <None Include="Imagem\Remover Livro Fiscal.ico" />
+    <None Include="Imagem\Renegociacao.jpg" />
+    <Content Include="Imagem\Saldos.ico" />
+    <Content Include="Imagem\SelecionarTodos.ico" />
+    <Content Include="Imagem\Transferencia.ico" />
+    <None Include="Imagem\Visuzalizar.ico" />
+    <None Include="Imagem\Usuario Bloqueado.ico" />
+    <Content Include="Imagem\Voltar.ico" />
+    <None Include="Resources\Photography.ico" />
+    <None Include="Resources\Expand Vertical1.ico" />
+    <None Include="Resources\proibido9.ico" />
+    <None Include="Resources\Cancelar.ico" />
+    <None Include="Resources\Descancelar.ico" />
+    <None Include="Resources\Negociacao.ico" />
+    <None Include="Resources\Cargill_black_2c.WMF" />
+    <None Include="Resources\logoCargill.jpg" />
+    <None Include="Resources\27.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

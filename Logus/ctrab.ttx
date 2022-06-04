@@ -1,0 +1,25 @@
+NO_RAZAO_SOCIAL	String	40	
+CD_CONTRATO	Number		
+DT_CONTRATO	Date		
+DT_VENCIMENTO	Date		
+QT_KGS	Number		
+VL_UNITARIO	Number		
+PC_ALIQ_ICMS	Number		
+CD_TIPO_UNIDADE	Number		
+CD_FILIAL_ORIGEM	Number		
+NO_REPRESENTANTE	String	40	
+NO_REPASSADOR	String	40	
+NO_FILIAL	String	20	
+VL_TOTAL	Number		
+CD_TIPO_PESSOA	Number		
+VL_PAG	Number		
+QT_REC	Number		
+DT_SISTEMA	Date		
+VL_ADENDO_CONTRATO	Number		
+SQ_NEGOCIACAO	Number		
+SQ_CONTRATO_FIXO	Number		
+QT_CANCELADO	Number		
+CD_TIPO_NEGOCIACAO	Number		
+NO_TIPO_NEGOCIACAO	String	30	
+ic_gp	String	1	
+dt_vencimento_gp	Date			

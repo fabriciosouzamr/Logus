@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="REL_Outros" targetNamespace="http://tempuri.org/REL_Outros.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/REL_Outros.xsd" xmlns:mstns="http://tempuri.org/REL_Outros.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PagamentosAbertos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Tipo" type="xs:string" />
+        <xs:element name="cd_filial_origem" type="xs:integer" />
+        <xs:element name="no_filial" type="xs:string" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="dt_pagamento" type="xs:date" />
+        <xs:element name="ds_descricao" type="xs:string" />
+        <xs:element name="vl_pagamento" type="xs:double" />
+        <xs:element name="vl_dolar" type="xs:double" />
+        <xs:element name="vl_taxa_dolar" type="xs:double" />
+        <xs:element name="no_forma_pagamento" type="xs:string" />
+        <xs:element name="cd_tipo_pagamento" type="xs:integer" />
+        <xs:element name="no_tipo_pagamento" type="xs:string" />
+        <xs:element name="ic_pagamento_icms" type="xs:string" />
+        <xs:element name="cd_contrato_paf" type="xs:integer" />
+        <xs:element name="sq_negociacao" type="xs:integer" />
+        <xs:element name="sq_pagamento" type="xs:integer" />
+        <xs:element name="dt_vencimento" type="xs:date" />
+        <xs:element name="dt_hoje" type="xs:date" />
+        <xs:element name="cd_repassador" type="xs:integer" />
+        <xs:element name="no_repassador" type="xs:string" />
+        <xs:element name="cd_fornecedor" type="xs:integer" />
+        <xs:element name="Grupo01" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MovimentacaoCessaoDireito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dt_movimentacao" type="xs:date" />
+        <xs:element name="dt_cessao_direito" type="xs:date" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="no_fornecedor_final" type="xs:string" />
+        <xs:element name="nu_nf" type="xs:string" />
+        <xs:element name="qt_kg_movimentacao" type="xs:double" />
+        <xs:element name="vl_movimentacao" type="xs:double" />
+        <xs:element name="cd_filial" type="xs:integer" />
+        <xs:element name="no_filial" type="xs:string" />
+        <xs:element name="nu_cnpj" type="xs:string" />
+        <xs:element name="nu_cnpj_final" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FluxoCaixa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cd_filial" type="xs:integer" />
+        <xs:element name="no_filial" type="xs:string" />
+        <xs:element name="valor1" type="xs:double" />
+        <xs:element name="valor2" type="xs:double" />
+        <xs:element name="valor3" type="xs:double" />
+        <xs:element name="valor4" type="xs:double" />
+        <xs:element name="cdgrupo" type="xs:integer" />
+        <xs:element name="grupo" type="xs:string" />
+        <xs:element name="cdsubgrupo" type="xs:integer" />
+        <xs:element name="subgrupo" type="xs:string" />
+        <xs:element name="texto1" type="xs:string" />
+        <xs:element name="texto2" type="xs:string" />
+        <xs:element name="texto3" type="xs:string" />
+        <xs:element name="texto4" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AplicacaoPagamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dt_pagamento" type="xs:date" />
+        <xs:element name="dt_fixacao" type="xs:date" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="no_tipo_pagamento" type="xs:string" />
+        <xs:element name="no_forma_pagamento" type="xs:string" />
+        <xs:element name="vl_fixo" type="xs:double" />
+        <xs:element name="cd_contrato" type="xs:string" />
+        <xs:element name="tipo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+
+  <xs:element name="PDD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cd_contrato" type="xs:string" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="no_filial" type="xs:string" />
+        <xs:element name="tipo" type="xs:string" />
+        <xs:element name="no_tipo_garantia" type="xs:string" />
+        <xs:element name="qt_pdd" type="xs:double" />
+        <xs:element name="vl_pdd" type="xs:double" />
+        <xs:element name="bens" type="xs:string" />
+        <xs:element name="cm_status" type="xs:string" />
+        <xs:element name="ds_pdd" type="xs:string" />
+        <xs:element name="dt_vencimento" type="xs:date" />
+        <xs:element name="ds_grupo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  
+  <xs:element name="AplicacaoRecebimentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dt_movimentacao" type="xs:date" />
+        <xs:element name="dt_fixacao" type="xs:date" />
+        <xs:element name="nu_nf" type="xs:string" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="no_tipo_movimentacao" type="xs:string" />
+        <xs:element name="vl_fixo" type="xs:double" />
+        <xs:element name="qt_kg_fixo" type="xs:double" />
+        <xs:element name="cd_contrato" type="xs:string" />
+        <xs:element name="tipo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Conferencia_Contabil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="no_titulo" type="xs:string" />
+        <xs:element name="no_filial" type="xs:string" />
+        <xs:element name="vl_dia" type="xs:double" />
+        <xs:element name="qt_kg_dia" type="xs:double" />
+        <xs:element name="cd_filial" type="xs:integer" />
+        <xs:element name="nu_ordem" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cacau_A_Ordem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CD_FORNECEDOR" type="xs:integer" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="NO_TIPO_MOVIMENTACAO" type="xs:string" />
+        <xs:element name="CD_FILIAL_MOVIMENTACAO" type="xs:integer" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="QT_KG_NF" type="xs:integer" />
+        <xs:element name="QT_KG_LIQUIDO_NF" type="xs:integer" />
+        <xs:element name="QT_KG_A_FIXAR" type="xs:integer" />
+        <xs:element name="VL_A_FIXAR" type="xs:double" />
+        <xs:element name="VL_NF_FUNRURAL" type="xs:double" />
+        <xs:element name="VL_NF_ICMS" type="xs:double" />
+        <xs:element name="NO_TIPO_PESSOA" type="xs:string" />
+        <xs:element name="VL_TAXA_US" type="xs:double" />
+        <xs:element name="SQ_MOVIMENTACAO" type="xs:integer" />
+        <xs:element name="SQ_MOVIMENTACAO_CESSAO_DIREITO" type="xs:integer" />
+        <xs:element name="QT_DESCONTO_QUALIDADE" type="xs:integer" />
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="IC_ADIANTAMENTO" type="xs:string" />
+        <xs:element name="DT_HOJE" type="xs:date" />
+        <xs:element name="DT_VIGENCIA" type="xs:date" />
+        <xs:element name="NU_TELEFONE" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vounche">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_BANCO" type="xs:string" />
+        <xs:element name="SQ_MOV_BANCARIO" type="xs:integer" />
+        <xs:element name="NU_CHEQUE" type="xs:string" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NO_FAVORECIDO_ITEM" type="xs:string" />
+        <xs:element name="VL_BRUTO" type="xs:double" />
+        <xs:element name="VL_PAGO" type="xs:double" />
+        <xs:element name="DS_DESCRICAO" type="xs:string" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="CD_BANCO" type="xs:integer" />
+        <xs:element name="NO_OPERACAO" type="xs:string" />
+        <xs:element name="NO_FAVORECIDO" type="xs:string" />
+        <xs:element name="SQ_ITEM_MOV_BANCARIO" type="xs:integer" />
+        <xs:element name="VL_PROVISAO" type="xs:double" />
+        <xs:element name="NO_PROVISAO" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Conferencia_Contabil_RD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="no_tipo_movimentacao" type="xs:string" />
+        <xs:element name="valor_relatorio" type="xs:double" />
+        <xs:element name="valor_rd" type="xs:double" />
+        <xs:element name="valor_cont" type="xs:double" />
+        <xs:element name="qt_relatorio" type="xs:double" />
+        <xs:element name="qt_rd" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Apuracao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="NO_TIPO_MOVIMENTACAO" type="xs:string" />
+        <xs:element name="QT_KG_NF" type="xs:double" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="VL_NF_ICMS" type="xs:double" />
+        <xs:element name="VL_NF_FUNRURAL" type="xs:double" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NU_CGC_CPF" type="xs:string" />
+        <xs:element name="IC_FISICA_JURIDICA" type="xs:string" />
+        <xs:element name="CD_FUNRURAL" type="xs:integer" />
+        <xs:element name="PC_ALIQ_ICMS" type="xs:double" />
+        <xs:element name="NO_TIPO_PESSOA_TRIBUTACAO" type="xs:string" />
+        <xs:element name="PC_PIS_COFINS" type="xs:double" />
+        <xs:element name="VL_PIS_COFINS" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Movimentacao_DataCacau_Sintetico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="IC_ORIGEM" type="xs:string" />
+        <xs:element name="CD_ORIGEM" type="xs:string" />
+        <xs:element name="PC_ORIGEM" type="xs:double" />
+        <xs:element name="DS_GRUPO" type="xs:string" />
+        <xs:element name="QT_INTERVALO_01" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_02" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_03" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_04" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_05" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_06" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_07" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_08" type="xs:integer" />
+        <xs:element name="QT_INTERVALO_09" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Movimentacao_DataCacau_Analitico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SQ_MOVIMENTACAO" type="xs:integer" />
+        <xs:element name="CD_ORDEM_DESCARGA" type="xs:string" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="CD_PROCEDENCIA" type="xs:string" />
+        <xs:element name="NO_FILIAL_MOVIMENTACAO" type="xs:string" />
+        <xs:element name="NO_FILIAL_CACAU" type="xs:string" />
+        <xs:element name="NO_ARMAZEM" type="xs:string" />
+        <xs:element name="CD_PILHA" type="xs:string" />
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="DT_ENTRADA" type="xs:date" />
+        <xs:element name="DT_CACAU" type="xs:date" />
+        <xs:element name="QT_ENTRADA" type="xs:integer" />
+        <xs:element name="DS_INTERVALO" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PosEstCacau_SldFinan_CompraAmendoaCacau">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NR_ORDEM" type="xs:string" />
+        <xs:element name="NO_TIPO_CONTRATO" type="xs:string" />
+        <xs:element name="QT_KG_COMPRADO" type="xs:integer" />
+        <xs:element name="QT_SC_COMPRADO" type="xs:double" />
+        <xs:element name="QT_KG_SALDO" type="xs:integer" />
+        <xs:element name="QT_SC_SALDO" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PosEstCacau_SldFinan_EstoqueFilial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="QT_QUILOS" type="xs:integer" />
+        <xs:element name="QT_SACOS" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PosEstCacau_SldFinan_SaldoCacauAOrdem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="QT_KG_SAFRA_ANTES" type="xs:integer" />
+        <xs:element name="QT_SC_SAFRA_ANTES" type="xs:integer" />
+        <xs:element name="QT_KG_SAFRA_ATUAL" type="xs:integer" />
+        <xs:element name="QT_SC_SAFRA_ATUAL" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PosEstCacau_SldFinan_EntradaAmendoasCacauPorFilial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="QT_KG_MENSAL" type="xs:integer" />
+        <xs:element name="QT_SC_MENSAL" type="xs:integer" />
+        <xs:element name="QT_KG_SAFRA" type="xs:integer" />
+        <xs:element name="QT_SC_SAFRA" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PosEstCacau_SldFinan_PosicaoFinanceira">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="IC_GRUPO" type="xs:string" />
+        <xs:element name="NO_ITEM" type="xs:string" />
+        <xs:element name="VL_POSICAO" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcertoRD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="NO_TIPO_MOVIMENTACAO" type="xs:string" />
+        <xs:element name="IC_IMPORTACAO" type="xs:string" />
+        <xs:element name="IC_ENTRA_NO_RD" type="xs:string" />
+        <xs:element name="IC_ACERTO_ICMS" type="xs:string" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="QT_KG_LIQUIDO_NF" type="xs:double" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="VL_NF_ICMS" type="xs:double" />
+        <xs:element name="VL_NF_FUNRURAL" type="xs:double" />
+        <xs:element name="DS_ACERTO" type="xs:string" />
+        <xs:element name="NO_USER_CRIACAO" type="xs:string" />
+        <xs:element name="DT_CRIACAO" type="xs:date" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cacau_A_Ordem_Variacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CD_FORNECEDOR" type="xs:integer" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="CD_TIPO_MOVIMENTACAO" type="xs:integer" />
+        <xs:element name="NO_TIPO_MOVIMENTACAO" type="xs:string" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="QT_KG_NF" type="xs:integer" />
+        <xs:element name="QT_KG_LIQUIDO_NF" type="xs:integer" />
+        <xs:element name="QT_KG_A_FIXAR" type="xs:integer" />
+        <xs:element name="VL_A_FIXAR" type="xs:double" />
+        <xs:element name="VL_NF_FUNRURAL" type="xs:double" />
+        <xs:element name="VL_NF_ICMS" type="xs:double" />
+        <xs:element name="NO_TIPO_PESSOA" type="xs:string" />
+        <xs:element name="VL_TAXA_US" type="xs:double" />
+        <xs:element name="SQ_MOVIMENTACAO" type="xs:integer" />
+        <xs:element name="SQ_MOVIMENTACAO_CESSAO_DIREITO" type="xs:integer" />
+        <xs:element name="QT_DESCONTO_QUALIDADE" type="xs:double" />
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="IC_ADIANTAMENTO" type="xs:string" />
+        <xs:element name="DT_HOJE" type="xs:date" />
+        <xs:element name="DT_VIGENCIA" type="xs:date" />
+        <xs:element name="NU_TELEFONE" type="xs:string" />
+        <xs:element name="VL_FRETE_ATUAL" type="xs:double" />
+        <xs:element name="VL_DIFERENCIAL" type="xs:double" />
+        <xs:element name="PC_PIS_COFINS" type="xs:double" />
+        <xs:element name="VL_BOLSA" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListagemFrete_Recepcao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="NO_LOCAL_ENTREGA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="NO_FILIAL_FRETE" type="xs:string" />
+        <xs:element name="NO_TIPO_NEGOCIACAO" type="xs:string" />
+        <xs:element name="QT_MOVIMENTACAO" type="xs:double" />
+        <xs:element name="VL_MOVIMENTACAO" type="xs:double" />
+        <xs:element name="VL_FRETE" type="xs:double" />
+        <xs:element name="VL_FRETE_MOVIMENTACAO" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListagemFrete_Recepcao_TabelaFrete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="VL_POSTO_FABRICA" type="xs:double" />
+        <xs:element name="VL_POSTO_FILIAL" type="xs:double" />
+        <xs:element name="VL_POSTO_FAZENDA" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProvisaoNFComplementar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="DT_CONTRATO_FIXO" type="xs:date" />
+        <xs:element name="DT_MOVIMENTACAO" type="xs:date" />
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="VL_UNITARIO" type="xs:double" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="QT_KG_NF" type="xs:double" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="VL_CONTRATO" type="xs:double" />
+        <xs:element name="TX_DOLAR" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferenciaPeso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL_ORIGEM" type="xs:string" />
+        <xs:element name="NO_FILIAL_DESTINO" type="xs:string" />
+        <xs:element name="DT_TRANSFERENCIA" type="xs:date" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="QT_KG_NF" type="xs:integer" />
+        <xs:element name="QT_SACOS" type="xs:integer" />
+        <xs:element name="VL_PESO_SACARIA" type="xs:double" />
+        <xs:element name="QT_PESOSAIDA_BRUTO" type="xs:integer" />
+        <xs:element name="QT_PESOSAIDA_TARA" type="xs:integer" />
+        <xs:element name="QT_PESOSAIDA_LIQUIDO" type="xs:integer" />
+        <xs:element name="QT_PESOCHEGADA_BRUTO" type="xs:integer" />
+        <xs:element name="QT_PESOCHEGADA_TARA" type="xs:integer" />
+        <xs:element name="QT_PESOCHEGADA_LIQUIDO" type="xs:integer" />
+        <xs:element name="NO_MOTORISTA" type="xs:string" />
+        <xs:element name="NU_PLACA_VEICULO" type="xs:string" />
+        <xs:element name="VL_TRANSFERENCIA" type="xs:double" />
+        <xs:element name="NR_PILHA" type="xs:integer" />
+        <xs:element name="QT_UMIDADE_SAIDA" type="xs:double" />
+        <xs:element name="QT_UMIDADE_CHEGADA" type="xs:double" />
+        <xs:element name="VL_PESO_MEDIO_SACO_SAIDA" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AprovacaoAcertoRD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="NO_STATUS" type="xs:string" />
+        <xs:element name="DT_LANCAMENTO" type="xs:date" />
+        <xs:element name="DT_APROVACAO" type="xs:date" />
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="QT_AJUSTE" type="xs:double" />
+        <xs:element name="QT_AJUSTE_NF" type="xs:double" />
+        <xs:element name="VL_AJUSTE" type="xs:double" />
+        <xs:element name="VL_AJUSTE_ICMS" type="xs:double" />
+        <xs:element name="VL_AJUSTE_INSS" type="xs:double" />
+        <xs:element name="NO_TIPO_MOVIMENTACAO" type="xs:string" />
+        <xs:element name="CM_JUSTIFICATIVA" type="xs:string" />
+        <xs:element name="NO_APROVADOR" type="xs:string" />
+        <xs:element name="CM_JUSTIFICATIVA_APROVACAO" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AprovacaoAcertoEstoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_ARMAZEM" type="xs:string" />
+        <xs:element name="DT_LANCAMENTO" type="xs:date" />
+        <xs:element name="DT_APROVACAO" type="xs:date" />
+        <xs:element name="CD_PILHA" type="xs:integer" />
+        <xs:element name="NO_TIPO_SACARIA" type="xs:string" />
+        <xs:element name="QT_VOLUME" type="xs:double" />
+        <xs:element name="QT_SACOS" type="xs:double" />
+        <xs:element name="CM_JUSTIFICATIVA" type="xs:string" />
+        <xs:element name="NO_APROVADOR" type="xs:string" />
+        <xs:element name="CM_JUSTIFICATIVA_APROVACAO" type="xs:string" />
+        <xs:element name="NO_STATUS" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdiantamentoExposureAnalitico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="NO_TIPO_CONTRATO" type="xs:string" />
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="CD_CONTRATO_PAF" type="xs:integer" />
+        <xs:element name="DT_EMISSAO" type="xs:date" />
+        <xs:element name="DT_PRAZO_FIXACAO" type="xs:date" />
+        <xs:element name="DT_PRAZO_ENTREGA" type="xs:date" />
+        <xs:element name="VALOR_UNIT" type="xs:double" />
+        <xs:element name="QT_KG_CONTRATO" type="xs:double" />
+        <xs:element name="QT_KG_CANCELADOS" type="xs:double" />
+        <xs:element name="QT_KG_APLICADOS" type="xs:double" />
+        <xs:element name="QT_KG_NEGOCIAR" type="xs:double" />
+        <xs:element name="VL_PAGO_ABERTO" type="xs:double" />
+        <xs:element name="VL_JUROS" type="xs:double" />
+        <xs:element name="QT_KG_RECEBIDO" type="xs:double" />
+        <xs:element name="VL_KG_RECEBIDO" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UmidadeMedia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_ARMAZEM" type="xs:string" />
+        <xs:element name="QT_KG_NF_SAIDA" type="xs:double" />
+        <xs:element name="VL_UMIDADE_SAIDA" type="xs:double" />
+        <xs:element name="VL_SUJIDADE_SAIDA" type="xs:double" />
+        <xs:element name="QT_KG_NF_ENTRADA_FABRICA" type="xs:double" />
+        <xs:element name="VL_UMIDADE_ENTRADA_FABRICA" type="xs:double" />
+        <xs:element name="VL_SUJIDADE_ENTRADA_FABRICA" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UmidadeMedia_Itens">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_ITEM" type="xs:string" />
+        <xs:element name="VL_ITEM" type="xs:double" />
+        <xs:element name="NR_ITEM" type="xs:integer" />
+        <xs:element name="QT_UMIDADE" type="xs:double" />
+        <xs:element name="IC_DESTACAR" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UmidadeMedia_Quebra">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="QT_QUEBRA" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaldoFinanceiro_CtrFixo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_SAFRA" type="xs:integer" />
+        <xs:element name="DS_SAFRA" type="xs:string" />
+        <xs:element name="DT_CONTRATO_FIXO" type="xs:date" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="QT_KGS" type="xs:double" />
+        <xs:element name="VL_TOTAL" type="xs:double" />
+        <xs:element name="VL_ICMS" type="xs:double" />
+        <xs:element name="QT_KG_FIXO" type="xs:double" />
+        <xs:element name="VL_PAG_FIXO" type="xs:double" />
+        <xs:element name="VL_NF_INSS_FIXO" type="xs:double" />
+        <xs:element name="VL_NF_FIXO" type="xs:double" />
+        <xs:element name="VL_ADENDO" type="xs:double" />
+        <xs:element name="VL_UNITARIO" type="xs:double" />
+        <xs:element name="VL_ADENDO_ICMS" type="xs:double" />
+        <xs:element name="VL_DOLAR_ATUAL" type="xs:double" />
+        <xs:element name="QT_CANCELADO" type="xs:double" />
+        <xs:element name="IC_STATUS" type="xs:string" />
+        <xs:element name="VL_INSS" type="xs:double" />
+        <xs:element name="IC_TAXA_DOLAR_VARIAVEL" type="xs:string" />
+        <xs:element name="VL_BOLSA_FECHADO" type="xs:double" />
+        <xs:element name="VL_NEGOCIACAO" type="xs:double" />
+        <xs:element name="IC_BOLSA_OPERACAO" type="xs:string" />
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="IC_INCLUI_ICMS_PAG" type="xs:string" />
+        <xs:element name="VL_IMPOSTO" type="xs:double" />
+        <xs:element name="TX_PIS" type="xs:double" />
+        <xs:element name="CD_TIPO_PESSOA" type="xs:integer" />
+        <xs:element name="CD_PAPEL" type="xs:string" />
+        <xs:element name="DT_VENCIMENTO" type="xs:date" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaldoFornecedor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="VL_CACAU_ORDEM" type="xs:double" />
+        <xs:element name="VL_PRECO_MEDIO" type="xs:double" />
+        <xs:element name="VL_INSS" type="xs:double" />
+        <xs:element name="VL_ADTO_ICMS" type="xs:double" />
+        <xs:element name="VL_ADTO_CTR_PAF" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA" type="xs:double" />
+        <xs:element name="VL_CACAU_ORDEM_US" type="xs:double" />
+        <xs:element name="VL_PRECO_MEDIO_US" type="xs:double" />
+        <xs:element name="VL_INSS_US" type="xs:double" />
+        <xs:element name="VL_ADTO_ICMS_US" type="xs:double" />
+        <xs:element name="VL_ADTO_CTR_PAF_US" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA_US" type="xs:double" />
+        <xs:element name="VL_TAXA_US" type="xs:double" />
+        <xs:element name="DT_BASE" type="xs:string" />
+        <xs:element name="QT_KGS" type="xs:double" />
+        <xs:element name="VL_TOTAL" type="xs:double" />
+        <xs:element name="VL_ADENDO" type="xs:double" />
+        <xs:element name="VL_ICMS" type="xs:double" />
+        <xs:element name="VL_ADENDO_ICMS" type="xs:double" />
+        <xs:element name="VL_PAG_FIXO" type="xs:double" />
+        <xs:element name="QT_KG_FIXO" type="xs:double" />
+        <xs:element name="IC_TAXA_DOLAR_VARIAVEL" type="xs:string" />
+        <xs:element name="VL_DOLAR_ATUAL" type="xs:double" />
+        <xs:element name="IC_BOLSA_OPERACAO" type="xs:string" />
+        <xs:element name="VL_BOLSA_FECHADO" type="xs:double" />
+        <xs:element name="VL_NEGOCIACAO" type="xs:double" />
+        <xs:element name="VL_NF_FIXO" type="xs:double" />
+        <xs:element name="VL_NF_INSS_FIXO" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA_JUROS" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA_JUROS_US" type="xs:double" />
+        <xs:element name="VL_ADTO_NEG" type="xs:double" />
+        <xs:element name="VL_ADTO_NEG_US" type="xs:double" />
+        <xs:element name="VL_REV_CACAU_ORDEM" type="xs:double" />
+        <xs:element name="VL_REV_CACAU_ORDEM_US" type="xs:double" />
+        <xs:element name="VL_DIF_BOLSA_FIX" type="xs:double" />
+        <xs:element name="VL_DIF_BOLSA_FIX_US" type="xs:double" />
+        <xs:element name="VL_PROV_NF_COMPL" type="xs:double" />
+        <xs:element name="VL_PROV_NF_COMPL_US" type="xs:double" />
+        <xs:element name="VL_REV_DIF_BOLSA" type="xs:double" />
+        <xs:element name="VL_REV_DIF_BOLSA_US" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PIS_COFINS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SQ_MOVIMENTACAO" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="TP_PESSOA" type="xs:string" />
+        <xs:element name="NF" type="xs:string" />
+        <xs:element name="QUANTIDADE" type="xs:integer" />
+        <xs:element name="VALOR" type="xs:double" />
+        <xs:element name="DT_APLICACAO" type="xs:date" />
+        <xs:element name="CD_CTR_APLICACAO" type="xs:string" />
+        <xs:element name="QT_KG_APLICACAO" type="xs:integer" />
+        <xs:element name="VL_APLICACAO" type="xs:double" />
+        <xs:element name="PC_ALIQ_PIS" type="xs:double" />
+        <xs:element name="PC_ALIQ_COFINS" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CASH_TRADE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_SAFRA" type="xs:integer" />
+        <xs:element name="DS_SAFRA" type="xs:string" />
+        <xs:element name="DT_CONTRATO_FIXO" type="xs:date" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="QT_KGS" type="xs:double" />
+        <xs:element name="VL_TOTAL" type="xs:double" />
+        <xs:element name="VL_ICMS" type="xs:double" />
+        <xs:element name="QT_KG_FIXO" type="xs:double" />
+        <xs:element name="VL_PAG_FIXO" type="xs:double" />
+        <xs:element name="VL_NF_INSS_FIXO" type="xs:double" />
+        <xs:element name="VL_NF_FIXO" type="xs:double" />
+        <xs:element name="VL_ADENDO" type="xs:double" />
+        <xs:element name="VL_UNITARIO" type="xs:double" />
+        <xs:element name="VL_ADENDO_ICMS" type="xs:double" />
+        <xs:element name="VL_DOLAR_ATUAL" type="xs:double" />
+        <xs:element name="QT_CANCELADO" type="xs:double" />
+        <xs:element name="IC_STATUS" type="xs:string" />
+        <xs:element name="VL_INSS" type="xs:double" />
+        <xs:element name="IC_TAXA_DOLAR_VARIAVEL" type="xs:string" />
+        <xs:element name="VL_BOLSA_FECHADO" type="xs:double" />
+        <xs:element name="VL_NEGOCIACAO" type="xs:double" />
+        <xs:element name="IC_BOLSA_OPERACAO" type="xs:string" />
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="IC_INCLUI_ICMS_PAG" type="xs:string" />
+        <xs:element name="VL_IMPOSTO" type="xs:double" />
+        <xs:element name="TX_PIS" type="xs:double" />
+        <xs:element name="CD_TIPO_PESSOA" type="xs:integer" />
+        <xs:element name="CD_PAPEL" type="xs:string" />
+        <xs:element name="DT_VENCIMENTO" type="xs:date" />
+        <xs:element name="VL_PREMIO_CRM" type="xs:double" />
+        <xs:element name="VL_TAXA_DOLAR" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

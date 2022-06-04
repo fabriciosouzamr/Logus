@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="REL_Transferencia" targetNamespace="http://tempuri.org/REL_Transferencia.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/REL_Transferencia.xsd" xmlns:mstns="http://tempuri.org/REL_Transferencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Transferencia_Data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_FILIAL_ORIGEM" type="xs:integer" />
+        <xs:element name="NO_FILIAL_ORIGEM" type="xs:string" />
+        <xs:element name="NO_FILIAL_DESTINO" type="xs:string" />
+        <xs:element name="DT_TRANSFERENCIA" type="xs:date" />
+        <xs:element name="NO_TRANSFERENCIA_MODALIDADE" type="xs:string" />
+        <xs:element name="DT_CHEGADA" type="xs:date" />
+        <xs:element name="NU_NF" type="xs:string" />
+        <xs:element name="IC_TIPO_CACAU" type="xs:integer" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="VL_ICMS_NF" type="xs:double" />
+        <xs:element name="QT_KG_NF" type="xs:double" />
+        <xs:element name="QT_KG_LIQUIDO_NF" type="xs:double" />
+        <xs:element name="QT_SACOS" type="xs:integer" />
+        <xs:element name="QT_SACOS_CH" type="xs:integer" />
+        <xs:element name="QT_UMIDADE" type="xs:double" />
+        <xs:element name="QT_PESO_AMENDOA" type="xs:double" />
+        <xs:element name="QT_MOFO" type="xs:double" />
+        <xs:element name="QT_ARDOSIA" type="xs:double" />
+        <xs:element name="QT_FUMACA" type="xs:double" />
+        <xs:element name="QT_ACHATADA" type="xs:double" />
+        <xs:element name="PC_SUJIDADE" type="xs:double" />
+        <xs:element name="IC_TIPO_CACAU_CH" type="xs:integer" />
+        <xs:element name="VL_NF_CH" type="xs:double" />
+        <xs:element name="VL_ICMS_NF_CH" type="xs:double" />
+        <xs:element name="QT_KG_NF_CH" type="xs:double" />
+        <xs:element name="QT_KG_LIQUIDO_NF_CH" type="xs:double" />
+        <xs:element name="QT_UMIDADE_CH" type="xs:double" />
+        <xs:element name="QT_PESO_AMENDOA_CH" type="xs:double" />
+        <xs:element name="QT_MOFO_CH" type="xs:double" />
+        <xs:element name="QT_ARDOSIA_CH" type="xs:double" />
+        <xs:element name="QT_FUMACA_CH" type="xs:double" />
+        <xs:element name="QT_ACHATADA_CH" type="xs:double" />
+        <xs:element name="PC_SUJIDADE_CH" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Industrializacao_Valorizacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DT_INDUSTRIALIZACAO" type="xs:date" />
+        <xs:element name="QT_LINHA_A" type="xs:integer" />
+        <xs:element name="QT_LINHA_B" type="xs:integer" />
+        <xs:element name="VL_LINHA_A" type="xs:integer" />
+        <xs:element name="VL_LINHA_B" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

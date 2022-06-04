@@ -1,0 +1,36 @@
+CD_CONTRATO	Number		
+NO_RAZAO_SOCIAL	String	40	
+NO_TIPO_PESSOA	String	11	
+QT_KGS	Number		
+CD_TIPO_UNIDADE	Number		
+VL_UNITARIO	Number		
+VL_PRECO_FRETE	Number		
+QT_FIX	Number		
+CD_FILIAL	Number		
+NO_FILIAL	String	20	
+VL_TAXA	Number		
+PC_ALIQ_ICMS	Number		
+VL_TAXA_DOLAR	Number		
+VL_TAXA_DOLAR_ALTERNATIVO	Number		
+VL_BOLSA	Number		
+VL_BOLSA_ALTERNATIVO	Number		
+CD_PAPEL	String	10	
+VL_DIFERENCIAL	Number		
+DT_CRIACAO	DateTime		
+DT_CONTRATO	DateTime		
+SQ_NEGOCIACAO	Number		
+QT_FATOR	Number		
+CD_TIPO_NEGOCIACAO	Number		
+NO_TIPO_NEGOCIACAO	String	30	
+IC_BOLSA	String	1	
+IC_BOLSA_OPERACAO	String	1	
+IC_TIPO_PRECO_FIXO	String	1	
+IC_DOLAR	String	1	
+sq_contrato_fixo	Number		
+tp_ctr	String	1	
+VL_NEGOCIACAO_BOLSA	Number		
+vl_premio_unitario_kg	Number		
+IC_FISICA_JURIDICA	String		1
+CD_TIPO_CACAU	Number		
+NO_TIPO_CACAU	String	30	
+IC_GP	String	1	

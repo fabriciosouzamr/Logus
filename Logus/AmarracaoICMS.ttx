@@ -1,0 +1,10 @@
+no_razao_social	String	50	
+nu_nf	String	10	
+dt_movimentacao	DateTime
+vl_nf	Number		
+vl_icms	Number		
+dt_pagamento	DateTime
+cd_tp	String	1	
+dt_amarracao	DateTime
+ds_descricao	String	100	
+Saldo_Aplicar	Number		

@@ -1,0 +1,19 @@
+NO_RAZAO_SOCIAL	String	40	
+DT_CONTRATO	DateTime		
+CD_CONTRATO	Number		
+QT_KGS	Number		
+QT_FIXO	Number		
+VL_UNITARIO	Number		
+CD_TIPO_UNIDADE	Number		
+VL_TOTAL	Number		
+VL_PAGO_SI	Number		
+IC_STATUS	String	1	
+CD_FILIAL_ORIGEM	Number		
+VL_ADENDO_CONTRATO	Number		
+SQ_NEGOCIACAO	Number		
+SQ_CONTRATO_FIXO	Number		
+ic_gp	String	1	
+dt_vencimento_gp	DateTime		
+VL_Liquido	Number		
+VL_ICMS	Number		
+vl_adendo_icms	Number		

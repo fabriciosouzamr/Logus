@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="REL_Contratos" targetNamespace="http://tempuri.org/REL_Contratos.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/REL_Contratos.xsd" xmlns:mstns="http://tempuri.org/REL_Contratos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CONTRATO_PAF">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_PAF" type="xs:integer" />
+        <xs:element name="DT_CONTRATO_PAF" type="xs:date" />
+        <xs:element name="NO_RAZAO_FILIAL_EMISSOR" type="xs:string" />
+        <xs:element name="NU_CGC_FILIAL_EMISSOR" type="xs:string" />
+        <xs:element name="DS_ENDERECO_FILIAL_EMISSAO" type="xs:string" />
+        <xs:element name="NO_CIDADE_FILIAL_EMISSAO" type="xs:string" />
+        <xs:element name="CD_UF_FILIAL_EMISSOR" type="xs:string" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="NU_CGC_CPF" type="xs:string" />
+        <xs:element name="DS_ENDERECO_FORNECEDOR" type="xs:string" />
+        <xs:element name="NO_BAIRRO_FORNECEDOR" type="xs:string" />
+        <xs:element name="NO_CIDADE_FORNECEDOR" type="xs:string" />
+        <xs:element name="CD_UF_FORNECEDOR" type="xs:string" />
+        <xs:element name="QT_KGS" type="xs:integer" />
+        <xs:element name="NO_UF_ORIGEM" type="xs:string" />
+        <xs:element name="NO_TIPO_ACONDICIONAMENTO" type="xs:string" />
+        <xs:element name="NO_TIPO_QUALIDADE" type="xs:string" />
+        <xs:element name="DS_TIPO_QUALIDADE" type="xs:string" />
+        <xs:element name="VL_TIPO_QUALIDADE_MIN" type="xs:string" />
+        <xs:element name="VL_TIPO_QUALIDADE_MAX" type="xs:string" />
+        <xs:element name="NO_TIPO_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="NO_TIPO_CONDICAO_PAGAMENTO" type="xs:string" />
+        <xs:element name="DT_VENCIMENTO" type="xs:date" />
+        <xs:element name="NO_TIPO_MODALIDADE_ENTREGA" type="xs:string" />
+        <xs:element name="NO_LOCAL_CONFERENCIA_PESO" type="xs:string" />
+        <xs:element name="NO_LOCAL_CONFERENCIA_QUALIDADE" type="xs:string" />
+        <xs:element name="NO_RAZAO_FILIAL_NF" type="xs:string" />
+        <xs:element name="NU_CGC_FILIAL_NF" type="xs:string" />
+        <xs:element name="DS_ENDERECO_FILIAL_NF" type="xs:string" />
+        <xs:element name="NO_CIDADE_FILIAL_NF" type="xs:string" />
+        <xs:element name="CD_UF_FILIAL_NF" type="xs:string" />
+        <xs:element name="IC_FISICA_JURIDICA" type="xs:string" />
+        <xs:element name="PC_TAXA_JUROS" type="xs:double" />
+        <xs:element name="DT_PRAZO_FIXACAO" type="xs:date" />
+        <xs:element name="VL_ADIANTAMENTO" type="xs:double" />
+        <xs:element name="IC_TIPO_JUROS" type="xs:string" />
+        <xs:element name="DS_PERIODO_ENTREGA" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CONTRATO_NEG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_PAF" type="xs:integer" />
+        <xs:element name="DT_CONTRATO_PAF" type="xs:date" />
+        <xs:element name="NO_RAZAO_FILIAL_EMISSOR" type="xs:string" />
+        <xs:element name="NU_CGC_FILIAL_EMISSOR" type="xs:string" />
+        <xs:element name="DS_ENDERECO_FILIAL_EMISSAO" type="xs:string" />
+        <xs:element name="NO_CIDADE_FILIAL_EMISSAO" type="xs:string" />
+        <xs:element name="CD_UF_FILIAL_EMISSOR" type="xs:string" />
+        <xs:element name="NO_RAZAO_SOCIAL" type="xs:string" />
+        <xs:element name="NU_CGC_CPF" type="xs:string" />
+        <xs:element name="DS_ENDERECO_FORNECEDOR" type="xs:string" />
+        <xs:element name="NO_BAIRRO_FORNECEDOR" type="xs:string" />
+        <xs:element name="NO_CIDADE_FORNECEDOR" type="xs:string" />
+        <xs:element name="CD_UF_FORNECEDOR" type="xs:string" />
+        <xs:element name="QT_KGS" type="xs:integer" />
+        <xs:element name="NO_UF_ORIGEM" type="xs:string" />
+        <xs:element name="NO_TIPO_ACONDICIONAMENTO" type="xs:string" />
+        <xs:element name="NO_TIPO_QUALIDADE" type="xs:string" />
+        <xs:element name="DS_TIPO_QUALIDADE" type="xs:string" />
+        <xs:element name="VL_TIPO_QUALIDADE_MIN" type="xs:string" />
+        <xs:element name="VL_TIPO_QUALIDADE_MAX" type="xs:string" />
+        <xs:element name="NO_TIPO_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="NO_TIPO_CONDICAO_PAGAMENTO" type="xs:string" />
+        <xs:element name="DT_VENCIMENTO" type="xs:date" />
+        <xs:element name="NO_TIPO_MODALIDADE_ENTREGA" type="xs:string" />
+        <xs:element name="NO_LOCAL_CONFERENCIA_PESO" type="xs:string" />
+        <xs:element name="NO_LOCAL_CONFERENCIA_QUALIDADE" type="xs:string" />
+        <xs:element name="NO_RAZAO_FILIAL_NF" type="xs:string" />
+        <xs:element name="NU_CGC_FILIAL_NF" type="xs:string" />
+        <xs:element name="DS_ENDERECO_FILIAL_NF" type="xs:string" />
+        <xs:element name="NO_CIDADE_FILIAL_NF" type="xs:string" />
+        <xs:element name="CD_UF_FILIAL_NF" type="xs:string" />
+        <xs:element name="IC_FISICA_JURIDICA" type="xs:string" />
+        <xs:element name="SQ_NEGOCIACAO" type="xs:integer" />
+        <xs:element name="IC_FACTOR" type="xs:integer" />
+        <xs:element name="VL_PRECO_UNITARIO" type="xs:double" />
+        <xs:element name="IC_BOLSA" type="xs:string" />
+        <xs:element name="IC_BOLSA_OPERACAO" type="xs:string" />
+        <xs:element name="IC_DOLAR" type="xs:string" />
+        <xs:element name="IC_TIPO_PRECO_FIXO" type="xs:string" />
+        <xs:element name="NO_PAPEL" type="xs:string" />
+        <xs:element name="PC_TAXA_JUROS" type="xs:double" />
+        <xs:element name="DT_PRAZO_FIXACAO" type="xs:date" />
+        <xs:element name="IC_IMPRIME_CTR_PAF" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DECLARACAO_FIXACAO_PRECO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_FIXO" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="TX_DOLAR" type="xs:double" />
+        <xs:element name="KG_EXT" type="xs:string" />
+        <xs:element name="VL_UNIT_EXT" type="xs:string" />
+        <xs:element name="VL_TOTAL_EXT" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CONTRATO_PAF_2010">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="QUANTIDADE" type="xs:double" />
+        <xs:element name="DT_PRAZO_ENTREGA" type="xs:string" />
+        <xs:element name="DT_PRAZO_FIXACAO" type="xs:string" />
+        <xs:element name="NO_LOCAL_ENTREGA" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CONTRATO_PAF_QUALIDADE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="NO_ANALISE" type="xs:string" />
+        <xs:element name="PC_DESEJADA" type="xs:double" />
+        <xs:element name="PC_MAXIMO" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CONTRATO_PAF_MASTER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="QUANTIDADE" type="xs:double" />
+        <xs:element name="VL_PRECO_UNITARIO" type="xs:double" />
+        <xs:element name="DT_PRAZO_ENTREGA_INI" type="xs:string" />
+        <xs:element name="DT_PRAZO_ENTREGA_FIM" type="xs:string" />
+        <xs:element name="NO_LOCAL_ENTREGA" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NEG_ADITAMENTO_REAL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="CD_CONTRATO_NEG" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="KG_NOVO" type="xs:double" />
+        <xs:element name="PER_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="DS_MODALIDADE_NOVO" type="xs:string" />
+        <xs:element name="VL_FIXADO_NOVO" type="xs:double" />
+        <xs:element name="DS_TOTAL_NOVO_EXTENSO" type="xs:double" />
+        <xs:element name="DS_LOCAL_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="NR_SECNUM_KG" type="xs:string" />
+        <xs:element name="NR_SECNUM_PER_ENTREGA" type="xs:string" />
+        <xs:element name="NR_SECNUM_MODALIDADE" type="xs:string" />
+        <xs:element name="NR_SECNUM_PRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_LOCAL_ENTREGA" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NEG_ADITAMENTO_BOLSA_ROLAGEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="CD_CONTRATO_NEG" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="DS_DIFF_VELHO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_PER_BOLSA_VELHO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_DIFF_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_PER_BOLSA_NOVO_EXTENSO" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+   <xs:element name="CASH_TRADE_CONTRATO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NR_ORDEM" type="xs:double" />
+        <xs:element name="TX_PIS" type="xs:double" />
+        <xs:element name="NO_TAXA" type="xs:string" />
+        <xs:element name="CD_GRUPO" type="xs:double" />
+        <xs:element name="NO_GRUPO" type="xs:string" />
+        <xs:element name="QT_KG_ANTERIOR" type="xs:double" />
+        <xs:element name="VL_KG_ANTERIOR" type="xs:double" />
+        <xs:element name="QT_KG" type="xs:double" />
+        <xs:element name="VL_KG" type="xs:double" />
+        <xs:element name="VL_IMPORTADO" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CASH_TRADE_IMPORTADO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="QT_KG" type="xs:double" />
+        <xs:element name="VL_KG" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="NEG_ADITAMENTO_BOLSA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="CD_CONTRATO_NEG" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="KG_NOVO" type="xs:double" />
+        <xs:element name="PER_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="DT_MAX_FIXACAO_NOVO" type="xs:string" />
+        <xs:element name="DS_DIFF_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_BOLSA_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_LOCAL_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="NR_SECNUM_KG" type="xs:string" />
+        <xs:element name="NR_SECNUM_PER_ENTREGA" type="xs:string" />
+        <xs:element name="NR_SECNUM_MAX_FIXACAOPRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_CONDICAO_FIXACAOPRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_LOCAL_ENTREGA" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NEGOCIACAO_ADITAMENTO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="CD_CONTRATO_NEG" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="KG_NOVO" type="xs:double" />
+        <xs:element name="PER_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="DS_MODALIDADE_NOVO" type="xs:string" />
+        <xs:element name="VL_FIXADO_NOVO" type="xs:double" />
+        <xs:element name="DS_TOTAL_NOVO_EXTENSO" type="xs:double" />
+        <xs:element name="DT_MAX_FIXACAO_NOVO" type="xs:string" />
+        <xs:element name="DS_DIFF_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_VLNEG_VELHO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_PER_BOLSA_VELHO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_VLNEG_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_PER_BOLSA_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_LOCAL_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="NR_SECNUM_KG" type="xs:string" />
+        <xs:element name="NR_SECNUM_PER_ENTREGA" type="xs:string" />
+        <xs:element name="NR_SECNUM_MODALIDADE" type="xs:string" />
+        <xs:element name="NR_SECNUM_PRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_MAX_FIXACAOPRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_CONDICAO_FIXACAOPRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_LOCAL_ENTREGA" type="xs:string" />
+        <xs:element name="NR_SECNUM_ROLAGEM" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CTR_ADITIVO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_ADITIVO" type="xs:string" />
+        <xs:element name="CD_CONTRATO_PAF" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="DS_DATA_CONTRATO" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="KG_VELHO" type="xs:double" />
+        <xs:element name="KG_NOVO" type="xs:double" />
+        <xs:element name="PER_ENTREGA_VELHO" type="xs:string" />
+        <xs:element name="PER_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="DS_MODALIDADE_NOVO" type="xs:string" />
+        <xs:element name="VL_FIXADO_NOVO" type="xs:double" />
+        <xs:element name="DS_TOTAL_NOVO_EXTENSO" type="xs:double" />
+        <xs:element name="DT_MAX_FIXACAO_VELHO" type="xs:string" />
+        <xs:element name="DT_MAX_FIXACAO_NOVO" type="xs:string" />
+        <xs:element name="DS_DIFF_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_VLNEG_VELHO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_PER_BOLSA_VELHO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_VLNEG_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_PER_BOLSA_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_JUROS_NOVO_EXTENSO" type="xs:string" />
+        <xs:element name="DS_LOCAL_ENTREGA_NOVO" type="xs:string" />
+        <xs:element name="NR_SECNUM_KG" type="xs:string" />
+        <xs:element name="NR_SECNUM_PER_ENTREGA" type="xs:string" />
+        <xs:element name="NR_SECNUM_MODALIDADE" type="xs:string" />
+        <xs:element name="NR_SECNUM_PRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_MAX_FIXACAOPRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_CONDICAO_FIXACAOPRECO" type="xs:string" />
+        <xs:element name="NR_SECNUM_LOCAL_ENTREGA" type="xs:string" />
+        <xs:element name="NR_SECNUM_ROLAGEM" type="xs:string" />
+        <xs:element name="NR_SECNUM_JUROS" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CONTRATOPAF_CONFCOMPRA_CACAUAORDEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_CONTRATO" type="xs:string" />
+        <xs:element name="DS_LOCAL_DATA" type="xs:string" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="CNPJ_FILIAL" type="xs:string" />
+        <xs:element name="END_FILIAL" type="xs:string" />
+        <xs:element name="IC_JURIDICA" type="xs:string" />
+        <xs:element name="NO_CLIENTE" type="xs:string" />
+        <xs:element name="CNPJ_CPF_CLIENTE" type="xs:string" />
+        <xs:element name="END_CLIENTE" type="xs:string" />
+        <xs:element name="QUANTIDADE" type="xs:double" />
+        <xs:element name="DS_LOCAL_ENTREGA" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+data	DateTime		
+nometmov	String	40	
+numctr	Number		
+kgs	Number		
+vlunit	Number		
+vltotal	Number		
+codfil	Number		
+nf	String	6	
+kglnf	Number		
+umidade	Number		
+tipo	Number		
+kgliq	Number		
+kgfix	Number		
+vlc	Number		
+vla	Number		
+tppreco	Number		
+tp	Number		
+CD_FILIAL_ORIGEM	Number		
+CD_FORNECEDOR	Number		
+NO_FORNECEDOR	String	40	
+CD_REPASSADOR	Number		
+NO_REPASSADOR	String	40	
+SQ_NEGOCIACAO	Number		
+SQ_CONTRATO_FIXO	Number		
+VL_NF	Number		
+VL_NF_FUNRURAL	Number		
+VL_CTR_INSS	Number		
+kgdes	Number		

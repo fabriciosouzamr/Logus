@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="REL_Fornecedor" targetNamespace="http://tempuri.org/REL_Fornecedor.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/REL_Fornecedor.xsd" xmlns:mstns="http://tempuri.org/REL_Fornecedor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Fornecedor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cd_fornecedor" type="xs:integer" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="ds_endereco" type="xs:string" />
+        <xs:element name="no_bairro" type="xs:string" />
+        <xs:element name="no_cidade" type="xs:string" />
+        <xs:element name="nu_cgc_cpf" type="xs:string" />
+        <xs:element name="nu_insc_estadual" type="xs:string" />
+        <xs:element name="ic_fisica_juridica" type="xs:string" />
+        <xs:element name="no_filial" type="xs:string" />
+        <xs:element name="cd_uf" type="xs:string" />
+        <xs:element name="cd_address_number" type="xs:integer" />
+        <xs:element name="cd_repassador" type="xs:integer" />
+        <xs:element name="DS_OBS" type="xs:string" />
+        <xs:element name="NU_TEL" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Agregado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cd_fornecedor" type="xs:integer" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="cd_repassador" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Fazenda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cd_fornecedor" type="xs:integer" />
+        <xs:element name="no_fazenda" type="xs:string" />
+        <xs:element name="ds_endereco" type="xs:string" />
+        <xs:element name="no_municipio" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Procurador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cd_fornecedor" type="xs:integer" />
+        <xs:element name="no_razao_social" type="xs:string" />
+        <xs:element name="dt_validade" type="xs:date" />
+        <xs:element name="cd_procurador" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CONTA_CORRENTE_FORNECEDOR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data" type="xs:date" />
+        <xs:element name="nometmov" type="xs:string" />
+        <xs:element name="numctr" type="xs:double" />
+        <xs:element name="kgs" type="xs:double" />
+        <xs:element name="vlunit" type="xs:double" />
+        <xs:element name="vltotal" type="xs:double" />
+        <xs:element name="codfil" type="xs:integer" />
+        <xs:element name="nf" type="xs:string" />
+        <xs:element name="kglnf" type="xs:double" />
+        <xs:element name="umidade" type="xs:double" />
+        <xs:element name="tipo" type="xs:integer" />
+        <xs:element name="kgliq" type="xs:double" />
+        <xs:element name="kgfix" type="xs:double" />
+        <xs:element name="vlc" type="xs:double" />
+        <xs:element name="vla" type="xs:double" />
+        <xs:element name="tppreco" type="xs:integer" />
+        <xs:element name="tp" type="xs:integer" />
+        <xs:element name="CD_FILIAL_ORIGEM" type="xs:integer" />
+        <xs:element name="CD_FORNECEDOR" type="xs:integer" />
+        <xs:element name="NO_FORNECEDOR" type="xs:string" />
+        <xs:element name="CD_REPASSADOR" type="xs:integer" />
+        <xs:element name="NO_REPASSADOR" type="xs:string" />
+        <xs:element name="SQ_NEGOCIACAO" type="xs:integer" />
+        <xs:element name="SQ_CONTRATO_FIXO" type="xs:integer" />
+        <xs:element name="VL_NF" type="xs:double" />
+        <xs:element name="VL_NF_FUNRURAL" type="xs:double" />
+        <xs:element name="VL_CTR_INSS" type="xs:double" />
+        <xs:element name="kgdes" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Saldo_Fornecedor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CD_FILIAL" type="xs:integer" />
+        <xs:element name="NO_FILIAL" type="xs:string" />
+        <xs:element name="VL_CACAU_ORDEM" type="xs:double" />
+        <xs:element name="VL_PRECO_MEDIO" type="xs:double" />
+        <xs:element name="VL_INSS" type="xs:double" />
+        <xs:element name="VL_ADTO_ICMS" type="xs:double" />
+        <xs:element name="VL_ADTO_CTR_PAF" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA" type="xs:double" />
+        <xs:element name="VL_CACAU_ORDEM_US" type="xs:double" />
+        <xs:element name="VL_PRECO_MEDIO_US" type="xs:double" />
+        <xs:element name="VL_INSS_US" type="xs:double" />
+        <xs:element name="VL_ADTO_ICMS_US" type="xs:double" />
+        <xs:element name="VL_ADTO_CTR_PAF_US" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA_US" type="xs:double" />
+        <xs:element name="VL_TAXA_US" type="xs:double" />
+        <xs:element name="DT_BASE" type="xs:date" />
+        <xs:element name="QT_KGS" type="xs:double" />
+        <xs:element name="VL_TOTAL" type="xs:double" />
+        <xs:element name="VL_ADENDO" type="xs:double" />
+        <xs:element name="VL_ICMS" type="xs:double" />
+        <xs:element name="VL_ADENDO_ICMS" type="xs:double" />
+        <xs:element name="VL_PAG_FIXO" type="xs:double" />
+        <xs:element name="QT_KG_FIXO" type="xs:double" />
+        <xs:element name="ic_taxa_dolar_variavel" type="xs:string" />
+        <xs:element name="vl_dolar_atual" type="xs:double" />
+        <xs:element name="ic_bolsa_operacao" type="xs:string" />
+        <xs:element name="vl_bolsa_fechado" type="xs:double" />
+        <xs:element name="vl_negociacao" type="xs:double" />
+        <xs:element name="vl_nf_fixo" type="xs:double" />
+        <xs:element name="vl_nf_inss_fixo" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA_JUROS" type="xs:double" />
+        <xs:element name="VL_CONF_DIVIDA_JUROS_US" type="xs:double" />
+        <xs:element name="VL_ADTO_NEG" type="xs:double" />
+        <xs:element name="VL_ADTO_NEG_US" type="xs:double" />
+        <xs:element name="VL_REV_CACAU_ORDEM" type="xs:double" />
+        <xs:element name="VL_REV_CACAU_ORDEM_US" type="xs:double" />
+        <xs:element name="VL_DIF_BOLSA_FIX" type="xs:double" />
+        <xs:element name="VL_DIF_BOLSA_FIX_US" type="xs:double" />
+        <xs:element name="VL_PROV_NF_COMPL" type="xs:double" />
+        <xs:element name="VL_PROV_NF_COMPL_US" type="xs:double" />
+        <xs:element name="VL_REV_DIF_BOLSA" type="xs:double" />
+        <xs:element name="VL_REV_DIF_BOLSA_US" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

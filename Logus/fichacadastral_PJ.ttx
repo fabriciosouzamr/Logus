@@ -1,0 +1,33 @@
+no_razao_social	String	40	
+nu_fax	String	15	
+nu_tel	String	15	
+nu_cep	String	10	
+no_bairro	String	15	
+nu_cgc_cpf	String	18	
+ic_fisica_juridica	String	1	
+ds_endereco	String	40	
+nu_celular	String	15	
+ds_endereco_complemento	String	50	
+no_cidade	String	15	
+cd_uf	String	2	
+ic_tipo_rg	Number		
+no_tipo_pessoa	String	20	
+sq_forn_ref_banco	Number		
+no_banco	String	40	
+nu_banco	String	10	
+cd_agencia	String	20	
+nu_conta_corrente	String	30	
+no_gerente	String	40	
+nu_telefone	String	20	
+no_Repassador	String	40	
+ds_Outra_Atividade	String	300	
+dt_Criacao	DateTime		
+no_Fantasia	String	40	
+nu_Insc_Estadual	String	15	
+nu_Registro_Junta_Comercial	String	30	
+dt_Constituicao_Junta	DateTime		
+no_Funrural	String	20	
+no_Tipo_Capital	String	30	
+ds_email	String	60	
+cd_address_number	Number		
+DS_OBS_FICHA	Memo		
